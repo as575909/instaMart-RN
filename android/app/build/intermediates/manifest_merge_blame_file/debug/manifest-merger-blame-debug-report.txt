@@ -1,0 +1,342 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.instamart"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="33" />
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->C:\Users\User\Project-DS-recovery\android\app\src\debug\AndroidManifest.xml:5:5-77
+11-->C:\Users\User\Project-DS-recovery\android\app\src\debug\AndroidManifest.xml:5:22-75
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->C:\Users\User\Project-DS-recovery\android\app\src\main\AndroidManifest.xml:3:5-67
+12-->C:\Users\User\Project-DS-recovery\android\app\src\main\AndroidManifest.xml:3:22-64
+13    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+13-->C:\Users\User\Project-DS-recovery\android\app\src\main\AndroidManifest.xml:4:5-79
+13-->C:\Users\User\Project-DS-recovery\android\app\src\main\AndroidManifest.xml:4:22-76
+14    <uses-permission android:name="android.permission.CAMERA" />
+14-->C:\Users\User\Project-DS-recovery\android\app\src\main\AndroidManifest.xml:5:1-60
+14-->C:\Users\User\Project-DS-recovery\android\app\src\main\AndroidManifest.xml:5:18-58
+15
+16    <uses-feature
+16-->C:\Users\User\Project-DS-recovery\android\app\src\main\AndroidManifest.xml:6:1-81
+17        android:name="android.hardware.camera"
+17-->C:\Users\User\Project-DS-recovery\android\app\src\main\AndroidManifest.xml:6:15-53
+18        android:required="false" />
+18-->C:\Users\User\Project-DS-recovery\android\app\src\main\AndroidManifest.xml:6:54-78
+19    <uses-feature
+19-->C:\Users\User\Project-DS-recovery\android\app\src\main\AndroidManifest.xml:6:1-81
+20        android:name="android.hardware.camera"
+20-->C:\Users\User\Project-DS-recovery\android\app\src\main\AndroidManifest.xml:6:15-53
+21        android:required="false" />
+21-->C:\Users\User\Project-DS-recovery\android\app\src\main\AndroidManifest.xml:6:54-78
+22
+23    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+23-->[com.facebook.flipper:flipper:0.125.0] C:\Users\User\.gradle\caches\transforms-3\32e15e3c42606fd384da3acdee3b32b0\transformed\jetified-flipper-0.125.0\AndroidManifest.xml:16:5-76
+23-->[com.facebook.flipper:flipper:0.125.0] C:\Users\User\.gradle\caches\transforms-3\32e15e3c42606fd384da3acdee3b32b0\transformed\jetified-flipper-0.125.0\AndroidManifest.xml:16:22-73
+24    <uses-permission android:name="android.permission.WAKE_LOCK" />
+24-->[:react-native-firebase_auth] C:\Users\User\Project-DS-recovery\node_modules\@react-native-firebase\auth\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-68
+24-->[:react-native-firebase_auth] C:\Users\User\Project-DS-recovery\node_modules\@react-native-firebase\auth\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-65
+25    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+25-->[:react-native-firebase_auth] C:\Users\User\Project-DS-recovery\node_modules\@react-native-firebase\auth\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-79
+25-->[:react-native-firebase_auth] C:\Users\User\Project-DS-recovery\node_modules\@react-native-firebase\auth\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:22-76
+26
+27    <queries>
+27-->[:react-native-image-crop-picker] C:\Users\User\Project-DS-recovery\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-13:15
+28        <intent>
+28-->[:react-native-image-crop-picker] C:\Users\User\Project-DS-recovery\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-12:18
+29            <action android:name="android.media.action.IMAGE_CAPTURE" />
+29-->[:react-native-image-crop-picker] C:\Users\User\Project-DS-recovery\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-73
+29-->[:react-native-image-crop-picker] C:\Users\User\Project-DS-recovery\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:21-70
+30        </intent>
+31    </queries>
+32
+33    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+33-->[:react-native-image-crop-picker] C:\Users\User\Project-DS-recovery\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:15:5-81
+33-->[:react-native-image-crop-picker] C:\Users\User\Project-DS-recovery\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:15:22-78
+34
+35    <application
+35-->C:\Users\User\Project-DS-recovery\android\app\src\main\AndroidManifest.xml:9:5-28:19
+36        android:name="com.instamart.MainApplication"
+36-->C:\Users\User\Project-DS-recovery\android\app\src\main\AndroidManifest.xml:10:7-38
+37        android:allowBackup="false"
+37-->C:\Users\User\Project-DS-recovery\android\app\src\main\AndroidManifest.xml:14:7-34
+38        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+38-->[androidx.core:core:1.7.0] C:\Users\User\.gradle\caches\transforms-3\5c85eefd62ee9cacecdf09834619c6ef\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+39        android:debuggable="true"
+40        android:icon="@mipmap/ic_launcher"
+40-->C:\Users\User\Project-DS-recovery\android\app\src\main\AndroidManifest.xml:12:7-41
+41        android:label="@string/app_name"
+41-->C:\Users\User\Project-DS-recovery\android\app\src\main\AndroidManifest.xml:11:7-39
+42        android:roundIcon="@mipmap/ic_launcher_round"
+42-->C:\Users\User\Project-DS-recovery\android\app\src\main\AndroidManifest.xml:13:7-52
+43        android:theme="@style/AppTheme"
+43-->C:\Users\User\Project-DS-recovery\android\app\src\main\AndroidManifest.xml:15:7-38
+44        android:usesCleartextTraffic="true" >
+44-->C:\Users\User\Project-DS-recovery\android\app\src\debug\AndroidManifest.xml:8:9-44
+45        <activity
+45-->C:\Users\User\Project-DS-recovery\android\app\src\debug\AndroidManifest.xml:11:9-111
+46            android:name="com.facebook.react.devsupport.DevSettingsActivity"
+46-->C:\Users\User\Project-DS-recovery\android\app\src\debug\AndroidManifest.xml:11:19-83
+47            android:exported="false" />
+47-->C:\Users\User\Project-DS-recovery\android\app\src\debug\AndroidManifest.xml:11:84-108
+48        <activity
+48-->C:\Users\User\Project-DS-recovery\android\app\src\main\AndroidManifest.xml:16:7-27:18
+49            android:name="com.instamart.MainActivity"
+49-->C:\Users\User\Project-DS-recovery\android\app\src\main\AndroidManifest.xml:17:9-37
+50            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
+50-->C:\Users\User\Project-DS-recovery\android\app\src\main\AndroidManifest.xml:19:9-118
+51            android:exported="true"
+51-->C:\Users\User\Project-DS-recovery\android\app\src\main\AndroidManifest.xml:22:9-32
+52            android:label="@string/app_name"
+52-->C:\Users\User\Project-DS-recovery\android\app\src\main\AndroidManifest.xml:18:9-41
+53            android:launchMode="singleTask"
+53-->C:\Users\User\Project-DS-recovery\android\app\src\main\AndroidManifest.xml:20:9-40
+54            android:windowSoftInputMode="adjustResize" >
+54-->C:\Users\User\Project-DS-recovery\android\app\src\main\AndroidManifest.xml:21:9-51
+55            <intent-filter>
+55-->C:\Users\User\Project-DS-recovery\android\app\src\main\AndroidManifest.xml:23:9-26:25
+56                <action android:name="android.intent.action.MAIN" />
+56-->C:\Users\User\Project-DS-recovery\android\app\src\main\AndroidManifest.xml:24:13-65
+56-->C:\Users\User\Project-DS-recovery\android\app\src\main\AndroidManifest.xml:24:21-62
+57
+58                <category android:name="android.intent.category.LAUNCHER" />
+58-->C:\Users\User\Project-DS-recovery\android\app\src\main\AndroidManifest.xml:25:13-73
+58-->C:\Users\User\Project-DS-recovery\android\app\src\main\AndroidManifest.xml:25:23-70
+59            </intent-filter>
+60        </activity>
+61
+62        <meta-data
+62-->[:react-native-firebase_app] C:\Users\User\Project-DS-recovery\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:9-13:36
+63            android:name="app_data_collection_default_enabled"
+63-->[:react-native-firebase_app] C:\Users\User\Project-DS-recovery\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-63
+64            android:value="true" />
+64-->[:react-native-firebase_app] C:\Users\User\Project-DS-recovery\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-33
+65
+66        <service
+66-->[:react-native-firebase_app] C:\Users\User\Project-DS-recovery\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:15:9-23:19
+67            android:name="com.google.firebase.components.ComponentDiscoveryService"
+67-->[:react-native-firebase_app] C:\Users\User\Project-DS-recovery\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-84
+68            android:directBootAware="true"
+68-->[:react-native-firebase_app] C:\Users\User\Project-DS-recovery\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-43
+69            android:exported="false" >
+69-->[:react-native-firebase_app] C:\Users\User\Project-DS-recovery\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:18:13-37
+70            <meta-data
+70-->[:react-native-firebase_app] C:\Users\User\Project-DS-recovery\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:20:13-22:85
+71                android:name="com.google.firebase.components:io.invertase.firebase.app.ReactNativeFirebaseAppRegistrar"
+71-->[:react-native-firebase_app] C:\Users\User\Project-DS-recovery\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:21:17-120
+72                android:value="com.google.firebase.components.ComponentRegistrar" />
+72-->[:react-native-firebase_app] C:\Users\User\Project-DS-recovery\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:22:17-82
+73            <meta-data
+73-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:69:13-71:85
+74                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+74-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:70:17-109
+75                android:value="com.google.firebase.components.ComponentRegistrar" />
+75-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:71:17-82
+76        </service>
+77
+78        <provider
+78-->[:react-native-firebase_app] C:\Users\User\Project-DS-recovery\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:25:9-29:38
+79            android:name="io.invertase.firebase.app.ReactNativeFirebaseAppInitProvider"
+79-->[:react-native-firebase_app] C:\Users\User\Project-DS-recovery\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:26:13-88
+80            android:authorities="com.instamart.reactnativefirebaseappinitprovider"
+80-->[:react-native-firebase_app] C:\Users\User\Project-DS-recovery\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:27:13-86
+81            android:exported="false"
+81-->[:react-native-firebase_app] C:\Users\User\Project-DS-recovery\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:28:13-37
+82            android:initOrder="99" />
+82-->[:react-native-firebase_app] C:\Users\User\Project-DS-recovery\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:29:13-35
+83        <provider
+83-->[:react-native-image-crop-picker] C:\Users\User\Project-DS-recovery\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:18:9-26:20
+84            android:name="com.reactnative.ivpusic.imagepicker.IvpusicImagePickerFileProvider"
+84-->[:react-native-image-crop-picker] C:\Users\User\Project-DS-recovery\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-94
+85            android:authorities="com.instamart.provider"
+85-->[:react-native-image-crop-picker] C:\Users\User\Project-DS-recovery\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:20:13-60
+86            android:exported="false"
+86-->[:react-native-image-crop-picker] C:\Users\User\Project-DS-recovery\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-37
+87            android:grantUriPermissions="true" >
+87-->[:react-native-image-crop-picker] C:\Users\User\Project-DS-recovery\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-47
+88            <meta-data
+88-->[:react-native-image-crop-picker] C:\Users\User\Project-DS-recovery\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-25:78
+89                android:name="android.support.FILE_PROVIDER_PATHS"
+89-->[:react-native-image-crop-picker] C:\Users\User\Project-DS-recovery\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:24:17-67
+90                android:resource="@xml/ivpusic_imagepicker_provider_paths" />
+90-->[:react-native-image-crop-picker] C:\Users\User\Project-DS-recovery\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:25:17-75
+91        </provider>
+92
+93        <activity
+93-->[:react-native-image-crop-picker] C:\Users\User\Project-DS-recovery\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:28:9-30:72
+94            android:name="com.yalantis.ucrop.UCropActivity"
+94-->[:react-native-image-crop-picker] C:\Users\User\Project-DS-recovery\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:29:13-60
+95            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+95-->[:react-native-image-crop-picker] C:\Users\User\Project-DS-recovery\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-69
+96
+97        <provider
+97-->[:react-native-webview] C:\Users\User\Project-DS-recovery\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-18:20
+98            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
+98-->[:react-native-webview] C:\Users\User\Project-DS-recovery\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-83
+99            android:authorities="com.instamart.fileprovider"
+99-->[:react-native-webview] C:\Users\User\Project-DS-recovery\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-64
+100            android:exported="false"
+100-->[:react-native-webview] C:\Users\User\Project-DS-recovery\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-37
+101            android:grantUriPermissions="true" >
+101-->[:react-native-webview] C:\Users\User\Project-DS-recovery\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-47
+102            <meta-data
+102-->[:react-native-image-crop-picker] C:\Users\User\Project-DS-recovery\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-25:78
+103                android:name="android.support.FILE_PROVIDER_PATHS"
+103-->[:react-native-image-crop-picker] C:\Users\User\Project-DS-recovery\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:24:17-67
+104                android:resource="@xml/file_provider_paths" />
+104-->[:react-native-image-crop-picker] C:\Users\User\Project-DS-recovery\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:25:17-75
+105        </provider>
+106
+107        <activity
+107-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:29:9-46:20
+108            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+108-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:30:13-80
+109            android:excludeFromRecents="true"
+109-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:31:13-46
+110            android:exported="true"
+110-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:32:13-36
+111            android:launchMode="singleTask"
+111-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:33:13-44
+112            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+112-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:34:13-72
+113            <intent-filter>
+113-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:35:13-45:29
+114                <action android:name="android.intent.action.VIEW" />
+114-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:36:17-69
+114-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:36:25-66
+115
+116                <category android:name="android.intent.category.DEFAULT" />
+116-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:38:17-76
+116-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:38:27-73
+117                <category android:name="android.intent.category.BROWSABLE" />
+117-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:39:17-78
+117-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:39:27-75
+118
+119                <data
+119-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:41:17-44:51
+120                    android:host="firebase.auth"
+120-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:42:21-49
+121                    android:path="/"
+121-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:43:21-37
+122                    android:scheme="genericidp" />
+122-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:44:21-48
+123            </intent-filter>
+124        </activity>
+125        <activity
+125-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:47:9-64:20
+126            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+126-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:48:13-79
+127            android:excludeFromRecents="true"
+127-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:49:13-46
+128            android:exported="true"
+128-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:50:13-36
+129            android:launchMode="singleTask"
+129-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:51:13-44
+130            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+130-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:52:13-72
+131            <intent-filter>
+131-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:53:13-63:29
+132                <action android:name="android.intent.action.VIEW" />
+132-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:36:17-69
+132-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:36:25-66
+133
+134                <category android:name="android.intent.category.DEFAULT" />
+134-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:38:17-76
+134-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:38:27-73
+135                <category android:name="android.intent.category.BROWSABLE" />
+135-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:39:17-78
+135-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:39:27-75
+136
+137                <data
+137-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:41:17-44:51
+138                    android:host="firebase.auth"
+138-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:42:21-49
+139                    android:path="/"
+139-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:43:21-37
+140                    android:scheme="recaptcha" />
+140-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:44:21-48
+141            </intent-filter>
+142        </activity>
+143
+144        <provider
+144-->[com.google.firebase:firebase-common:20.3.2] C:\Users\User\.gradle\caches\transforms-3\d501d11b51b9b45c2628fe2147cac516\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:25:9-30:39
+145            android:name="com.google.firebase.provider.FirebaseInitProvider"
+145-->[com.google.firebase:firebase-common:20.3.2] C:\Users\User\.gradle\caches\transforms-3\d501d11b51b9b45c2628fe2147cac516\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:26:13-77
+146            android:authorities="com.instamart.firebaseinitprovider"
+146-->[com.google.firebase:firebase-common:20.3.2] C:\Users\User\.gradle\caches\transforms-3\d501d11b51b9b45c2628fe2147cac516\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:27:13-72
+147            android:directBootAware="true"
+147-->[com.google.firebase:firebase-common:20.3.2] C:\Users\User\.gradle\caches\transforms-3\d501d11b51b9b45c2628fe2147cac516\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:28:13-43
+148            android:exported="false"
+148-->[com.google.firebase:firebase-common:20.3.2] C:\Users\User\.gradle\caches\transforms-3\d501d11b51b9b45c2628fe2147cac516\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:29:13-37
+149            android:initOrder="100" />
+149-->[com.google.firebase:firebase-common:20.3.2] C:\Users\User\.gradle\caches\transforms-3\d501d11b51b9b45c2628fe2147cac516\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:30:13-36
+150
+151        <activity
+151-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\User\.gradle\caches\transforms-3\2c72d4c775f629c439aaa1d0c0739c8c\transformed\jetified-play-services-auth-20.3.0\AndroidManifest.xml:23:9-27:75
+152            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+152-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\User\.gradle\caches\transforms-3\2c72d4c775f629c439aaa1d0c0739c8c\transformed\jetified-play-services-auth-20.3.0\AndroidManifest.xml:24:13-93
+153            android:excludeFromRecents="true"
+153-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\User\.gradle\caches\transforms-3\2c72d4c775f629c439aaa1d0c0739c8c\transformed\jetified-play-services-auth-20.3.0\AndroidManifest.xml:25:13-46
+154            android:exported="false"
+154-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\User\.gradle\caches\transforms-3\2c72d4c775f629c439aaa1d0c0739c8c\transformed\jetified-play-services-auth-20.3.0\AndroidManifest.xml:26:13-37
+155            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+155-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\User\.gradle\caches\transforms-3\2c72d4c775f629c439aaa1d0c0739c8c\transformed\jetified-play-services-auth-20.3.0\AndroidManifest.xml:27:13-72
+156        <!--
+157            Service handling Google Sign-In user revocation. For apps that do not integrate with
+158            Google Sign-In, this service will never be started.
+159        -->
+160        <service
+160-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\User\.gradle\caches\transforms-3\2c72d4c775f629c439aaa1d0c0739c8c\transformed\jetified-play-services-auth-20.3.0\AndroidManifest.xml:33:9-37:51
+161            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+161-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\User\.gradle\caches\transforms-3\2c72d4c775f629c439aaa1d0c0739c8c\transformed\jetified-play-services-auth-20.3.0\AndroidManifest.xml:34:13-89
+162            android:exported="true"
+162-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\User\.gradle\caches\transforms-3\2c72d4c775f629c439aaa1d0c0739c8c\transformed\jetified-play-services-auth-20.3.0\AndroidManifest.xml:35:13-36
+163            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+163-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\User\.gradle\caches\transforms-3\2c72d4c775f629c439aaa1d0c0739c8c\transformed\jetified-play-services-auth-20.3.0\AndroidManifest.xml:36:13-107
+164            android:visibleToInstantApps="true" />
+164-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\User\.gradle\caches\transforms-3\2c72d4c775f629c439aaa1d0c0739c8c\transformed\jetified-play-services-auth-20.3.0\AndroidManifest.xml:37:13-48
+165
+166        <activity
+166-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\User\.gradle\caches\transforms-3\14534f11995b76409b349d353840fdfc\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+167            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+167-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\User\.gradle\caches\transforms-3\14534f11995b76409b349d353840fdfc\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+168            android:exported="false"
+168-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\User\.gradle\caches\transforms-3\14534f11995b76409b349d353840fdfc\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+169            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+169-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\User\.gradle\caches\transforms-3\14534f11995b76409b349d353840fdfc\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+170
+171        <meta-data
+171-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\User\.gradle\caches\transforms-3\b8b032a9f011549aa4242ce10998c5f2\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+172            android:name="com.google.android.gms.version"
+172-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\User\.gradle\caches\transforms-3\b8b032a9f011549aa4242ce10998c5f2\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+173            android:value="@integer/google_play_services_version" />
+173-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\User\.gradle\caches\transforms-3\b8b032a9f011549aa4242ce10998c5f2\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+174
+175        <provider
+175-->[androidx.emoji2:emoji2:1.0.0] C:\Users\User\.gradle\caches\transforms-3\9aaa1b590eb2f3bcac6c49d3fc8b84cf\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+176            android:name="androidx.startup.InitializationProvider"
+176-->[androidx.emoji2:emoji2:1.0.0] C:\Users\User\.gradle\caches\transforms-3\9aaa1b590eb2f3bcac6c49d3fc8b84cf\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+177            android:authorities="com.instamart.androidx-startup"
+177-->[androidx.emoji2:emoji2:1.0.0] C:\Users\User\.gradle\caches\transforms-3\9aaa1b590eb2f3bcac6c49d3fc8b84cf\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+178            android:exported="false" >
+178-->[androidx.emoji2:emoji2:1.0.0] C:\Users\User\.gradle\caches\transforms-3\9aaa1b590eb2f3bcac6c49d3fc8b84cf\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+179            <meta-data
+179-->[androidx.emoji2:emoji2:1.0.0] C:\Users\User\.gradle\caches\transforms-3\9aaa1b590eb2f3bcac6c49d3fc8b84cf\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+180                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+180-->[androidx.emoji2:emoji2:1.0.0] C:\Users\User\.gradle\caches\transforms-3\9aaa1b590eb2f3bcac6c49d3fc8b84cf\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+181                android:value="androidx.startup" />
+181-->[androidx.emoji2:emoji2:1.0.0] C:\Users\User\.gradle\caches\transforms-3\9aaa1b590eb2f3bcac6c49d3fc8b84cf\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+182            <meta-data
+182-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\User\.gradle\caches\transforms-3\a4ee5ae2a9f6a2d028dd8e6b11840bc8\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+183                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+183-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\User\.gradle\caches\transforms-3\a4ee5ae2a9f6a2d028dd8e6b11840bc8\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+184                android:value="androidx.startup" />
+184-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\User\.gradle\caches\transforms-3\a4ee5ae2a9f6a2d028dd8e6b11840bc8\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+185        </provider>
+186    </application>
+187
+188</manifest>
