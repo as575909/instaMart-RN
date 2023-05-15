@@ -14,7 +14,7 @@ const LocationComponent = () => {
         setLongitude(position.coords.longitude);
       },
       error => console.log(error),
-      {enableHighAccuracy: true, timeout: 20000, maximumAge: 1000},
+      {enableHighAccuracy: true, timeout: 50000, maximumAge: 1000},
     );
   }, []);
 

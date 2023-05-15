@@ -3,7 +3,6 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import Profile from '../screens/Profile';
 import Products from '../screens/Products';
 import CartScreen from '../screens/CartScreen';
-import Home from '../screens/Home';
 import LocationComponent from '../component/Location';
 import UserData from '../screens/UserData';
 import About from '../screens/About';
@@ -21,7 +20,7 @@ import { useTranslation } from "react-i18next";
 const Drawer = createDrawerNavigator();
 
 function DrawerNav() {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   return (
 
     <Drawer.Navigator
@@ -53,18 +52,19 @@ function DrawerNav() {
           headerShown: false,
         }} />
 
-      <Drawer.Screen name={t("location_drawer_title")} component={LocationComponent}
+      <Drawer.Screen name={t("settings_drawer_title")} component={Settings}
         options={{
           drawerIcon: ({ color }) => (
-            <Ionicons name='location-outline' size={22} color={color} />
+            <Ionicons name='settings-outline' size={22} color={color} />
           ),
           headerTitleStyle: {
             fontSize: moderateScale(25),
             fontFamily: Strings.FontFamily,
           },
           headerTitleAlign: "center",
-
         }} />
+
+
 
       <Drawer.Screen name={t("mycart_drawer_title")} component={CartScreen}
         options={{
@@ -115,19 +115,9 @@ function DrawerNav() {
           headerTitleAlign: "center",
         }} />
 
-      <Drawer.Screen name={t("settings_drawer_title")} component={Settings}
-        options={{
-          drawerIcon: ({ color }) => (
-            <Ionicons name='settings-outline' size={22} color={color} />
-          ),
-          headerTitleStyle: {
-            fontSize: moderateScale(25),
-            fontFamily: Strings.FontFamily,
-          },
-          headerTitleAlign: "center",
-        }} />
 
-      {/* <Drawer.Screen name="Profile" component={Profile}
+
+      <Drawer.Screen name="Profile" component={Profile}
         options={{
           drawerIcon: ({ color }) => (
             <Ionicons name='person-outline' size={22} color={color} />
@@ -137,7 +127,7 @@ function DrawerNav() {
             fontFamily: Strings.FontFamily,
           },
           headerTitleAlign: "center",
-        }} /> */}
+        }} />
 
       <Drawer.Screen name={t("editprofile_drawer_title")} component={EditProfile}
         options={{
@@ -150,6 +140,20 @@ function DrawerNav() {
           },
           headerTitleAlign: "center",
         }} />
+
+      <Drawer.Screen name={t("location_drawer_title")} component={LocationComponent}
+        options={{
+          drawerIcon: ({ color }) => (
+            <Ionicons name='location-outline' size={22} color={color} />
+          ),
+          headerTitleStyle: {
+            fontSize: moderateScale(25),
+            fontFamily: Strings.FontFamily,
+          },
+          headerTitleAlign: "center",
+
+        }} />
+
 
 
     </Drawer.Navigator>

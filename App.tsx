@@ -1,11 +1,18 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import { Provider } from 'react-redux';
 import Navigation from './src/Navigation/Navigation';
 import {store, persistor} from './src/redux/store';
 import { PersistGate } from 'redux-persist/integration/react';
+//import { PERMISSIONS_TYPE, checkPermission } from './src/utils/AppPermission';
 
 
 const App = () => {
+
+  // useEffect(() => {
+  //   checkPermission(PERMISSIONS_TYPE.location)
+  //   // requestUserPermission()
+  //   // notificationListner()
+  // }, [])
 
   return(
     <Provider store={store}>

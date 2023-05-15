@@ -7,6 +7,7 @@ import TabNavigator from './BottomTab';
 import ProductDetails from '../screens/ProductDetails';
 import DrawerNav from './DrawerNav';
 import OTPScreen from '../screens/OnBoardingScreen/OtpScreen';
+import Settings from '../screens/Settings';
 
 const Navigation = () => {
   const Stack = createNativeStackNavigator();
@@ -25,6 +26,7 @@ const Navigation = () => {
             headerTitleStyle: { fontSize: 25, fontFamily: 'Itim-Regular' },
             headerTitleAlign: 'center'
           }} />
+          <Stack.Screen name='Settings' component={Settings} options={{ headerShown: false }} />
       </Stack.Navigator>
     </NavigationContainer>
   );

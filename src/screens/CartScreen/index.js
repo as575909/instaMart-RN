@@ -133,6 +133,12 @@ const CartScreen = ({ navigation }) => {
               ListEmptyComponent={listEmptyComponent}
             />
 
+            <View>
+              <Text> End </Text>
+              <Text> End </Text>
+              <Text> End </Text>
+            </View>
+
             <View style={styles.footer}>
               <View style={styles.total1}>
                 <Text style={styles.total2}>

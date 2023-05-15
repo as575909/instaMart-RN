@@ -28,11 +28,12 @@ const HomeHeadNav = (props) => {
               value={props.search}
               underlineColorAndroid="transparent"
               placeholder="Search Here"
+              placeholderTextColor= 'black'
             />
           </View>
           
           <TouchableOpacity onPress={() => navigation.navigate('Settings')}>
-        <Ionicons name="settings" size={32} color="#fff" />
+        <Ionicons name="heart" size={32} color="#fff" />
       </TouchableOpacity>
       
     </View>

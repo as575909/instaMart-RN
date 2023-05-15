@@ -9,7 +9,7 @@ import colors from '../../statics/styles/colors';
 export const styles = StyleSheet.create({
     footer: {
       width: '100%',
-      height: 50,
+      height: 68,
       backgroundColor: '#fff',
       position: 'absolute',
       bottom: moderateScale(-10),
@@ -103,7 +103,7 @@ export const styles = StyleSheet.create({
     },
     textHead: {
       color: colors.text3,
-      fontSize: responsiveFontSize(2),
+      fontSize: responsiveFontSize(2.5),
       fontFamily: "Itim-Regular",
     }
   
