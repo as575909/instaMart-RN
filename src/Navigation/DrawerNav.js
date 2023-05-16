@@ -79,7 +79,7 @@ function DrawerNav() {
           headerShown: false,
         }} />
 
-      <Drawer.Screen name={t("userdata_drawer_title")} component={UserData}
+      {/* <Drawer.Screen name={t("userdata_drawer_title")} component={UserData}
         options={{
           drawerIcon: ({ color }) => (
             <Ionicons name='pricetags-outline' size={22} color={color} />
@@ -89,9 +89,9 @@ function DrawerNav() {
             fontFamily: Strings.FontFamily,
           },
           headerTitleAlign: "center",
-        }} />
+        }} /> */}
 
-      <Drawer.Screen name={t("about_drawer_title")} component={About}
+      {/* <Drawer.Screen name={t("about_drawer_title")} component={About}
         options={{
           drawerIcon: ({ color }) => (
             <Ionicons name="information-circle-outline" size={22} color={color} />
@@ -101,7 +101,7 @@ function DrawerNav() {
             fontFamily: Strings.FontFamily,
           },
           headerTitleAlign: "center",
-        }} />
+        }} /> */}
 
       <Drawer.Screen name={t("contactus_drawer_title")} component={Contact}
         options={{
@@ -117,7 +117,7 @@ function DrawerNav() {
 
 
 
-      <Drawer.Screen name="Profile" component={Profile}
+      {/* <Drawer.Screen name="Profile" component={Profile}
         options={{
           drawerIcon: ({ color }) => (
             <Ionicons name='person-outline' size={22} color={color} />
@@ -127,7 +127,7 @@ function DrawerNav() {
             fontFamily: Strings.FontFamily,
           },
           headerTitleAlign: "center",
-        }} />
+        }} /> */}
 
       <Drawer.Screen name={t("editprofile_drawer_title")} component={EditProfile}
         options={{

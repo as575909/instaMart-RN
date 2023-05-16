@@ -1,12 +1,12 @@
-import { StyleSheet, Text, View, TouchableOpacity, Alert } from 'react-native'
-import React, { useState, useEffect } from 'react'
+import { View } from 'react-native'
+import React, { useState, } from 'react'
 import CustomButton from '../../component/CustomButton'
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import colors from '../../statics/styles/colors';
 import DropDownPicker from 'react-native-dropdown-picker';
 import { useTranslation } from 'react-i18next';
 import i18n from '../../i18n';
-import AppPermission from '../../utils/AppPermission';
+import { styles } from './index.style';
+import TogglePermission from '../../component/TogglePermission';
 
 const Settings = ({ navigation }) => {
   const { t, i18n } = useTranslation();
@@ -21,7 +21,7 @@ const Settings = ({ navigation }) => {
   return (
     <View style={styles.container}>
 
-      <AppPermission />
+      <TogglePermission />
 
       <View style={styles.lngicon1}>
         <Ionicons style={styles.icon} name='location-outline' size={28} color='yellow' />
@@ -58,72 +58,3 @@ const Settings = ({ navigation }) => {
 }
 export default Settings;
 
-const styles = StyleSheet.create({
-  container: {
-    // 
-    flex: 1,
-    backgroundColor: 'black',
-  },
-
-  lngicon: {
-    flexDirection: 'row',
-    justifyContent: 'space-evenly',
-    padding: 10,
-  },
-  lngicon1: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    marginTop: 10,
-  },
-  icon: {
-    marginLeft: 20,
-    marginTop: 11,
-  },
-  permissionContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    marginVertical: 10,
-    paddingHorizontal: 20,
-    width: '100%',
-    backgroundColor: 'black',
-  },
-  permissionText: {
-    fontSize: 18,
-    fontWeight: 'bold',
-  },
-  detail: {
-    color: "white",
-    marginLeft: 30,
-    fontSize: 15
-  },
-  row: {
-    flexDirection: 'row',
-    marginBottom: 15,
-  },
-  cstmBtn: {
-    backgroundColor: colors.bg,
-    borderColor: colors.drvoilet,
-    marginRight: 10,
-    borderWidth: 1,
-  },
-  cstmBtnTxt: {
-    color: colors.black, alignSelf: 'flex-start', marginLeft: 10
-  },
-  dropdown: {
-    width: '85%',
-    backgroundColor: colors.bg,
-    borderColor: colors.drvoilet,
-    borderWidth: 1,
-    marginLeft: 40,
-  },
-  dropdownItem: {
-    justifyContent: 'flex-start',
-  },
-
-  dropdownLabel: {
-    fontSize: 16,
-    fontFamily: 'Itim-Regular',
-    color: colors.black,
-  },
-})

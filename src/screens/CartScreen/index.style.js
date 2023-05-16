@@ -82,7 +82,7 @@ export const styles = StyleSheet.create({
       fontFamily: "Itim-Regular",
       textTransform: "capitalize",
     },
-    qty: {
+    quantity: {
       marginLeft: 0,
       fontSize: 16,
       fontWeight: '600',

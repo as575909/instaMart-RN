@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Text, View,  Alert } from 'react-native';
+import { View,  Alert } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 import { styles } from './index.style';
 import { Input } from '../../component/Input';

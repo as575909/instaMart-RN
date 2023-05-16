@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import colors from "../../statics/styles/colors";
 
 
 export const styles = StyleSheet.create({
@@ -25,6 +26,7 @@ textInputStyle: {
   paddingLeft: 20,
   margin: 2,
   borderColor: '#009688',
-  backgroundColor: '#FFFFFF',
+  backgroundColor: colors.background,
+  color: colors.black
 },
 });

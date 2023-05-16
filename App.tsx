@@ -3,16 +3,39 @@ import { Provider } from 'react-redux';
 import Navigation from './src/Navigation/Navigation';
 import {store, persistor} from './src/redux/store';
 import { PersistGate } from 'redux-persist/integration/react';
-//import { PERMISSIONS_TYPE, checkPermission } from './src/utils/AppPermission';
+import {
+  requestLocationPermission,
+  requestCameraPermission,
+  requestStoragePermission,
+  requestNotificationPermission,
+} from './src/utils/AppPermission';
 
+ import messaging from '@react-native-firebase/messaging';
 
 const App = () => {
 
-  // useEffect(() => {
-  //   checkPermission(PERMISSIONS_TYPE.location)
-  //   // requestUserPermission()
-  //   // notificationListner()
-  // }, [])
+  useEffect(() => {
+
+    askPermission();
+    //getDeviceToken();
+    
+  }, [])
+
+  const getDeviceToken = async () => {
+    try {
+      const token = await messaging().getToken();
+      console.log('FCM Token:', token);
+    } catch (error) {
+      console.log('Error getting FCM token:', error);
+    }
+  };
+
+  const askPermission = async () => {
+    await requestLocationPermission();
+    await requestCameraPermission();
+    await requestStoragePermission();
+    await requestNotificationPermission();
+  };
 
   return(
     <Provider store={store}>

@@ -11,7 +11,7 @@ import MyButton from '../../../component/MyButton';
 import { useTranslation } from "react-i18next";
 
 const OTPScreen = ({ route, navigation }) => {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   const { confirm, phoneNumber } = route.params;
   // const confirm = useSelector((state) => state.confirm);
   const Code_Length = 6;
@@ -21,12 +21,12 @@ const OTPScreen = ({ route, navigation }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setTimer(timer => timer - 1);
-      if(timer === 0){
+      }, 1000);
+      if (timer === 0) {
         clearInterval(interval);
       }
-    }, 1000);
-   
-  }, []);
+      return () => clearInterval(interval);
+  }, [timer]);
 
 
   const handleVerifyCode = async () => {
@@ -34,16 +34,16 @@ const OTPScreen = ({ route, navigation }) => {
       // Alert.alert('Success','OTP verified successfully');
       // navigation.navigate('ResetPswrdScreen');
       console.log(Object.keys(confirm), "hiii")
-     
+
       await confirm.confirm(code);
-      Alert.alert('Success','OTP verified successfully');
+      Alert.alert('Success', 'OTP verified successfully');
       showMessage({
         message: 'Verification successful!',
         type: 'success',
       });
       console.log('Verification successful!');
-      navigation.navigate('ResetPswrdScreen',{
-        params: {phoneNumber},
+      navigation.navigate('ResetPswrdScreen', {
+        params: { phoneNumber },
       });
     } catch (error) {
       showMessage({
@@ -57,6 +57,7 @@ const OTPScreen = ({ route, navigation }) => {
     try {
       const withCountryCode = `+91${phoneNumber}`;
       const confirmation = await auth().signInWithPhoneNumber(withCountryCode);
+      console.log('confirmaton... here...', confirmation);
       setConfirm(confirmation);
       setTimer(60);
       showMessage({
@@ -85,9 +86,12 @@ const OTPScreen = ({ route, navigation }) => {
         />
       </View>
       <MyButton onPress={handleVerifyCode} text={t("otp_verify_btn")} />
-
+      <MyText></MyText>
+      <MyText></MyText>
+      <MyText></MyText>
       <View style={styles.resendContainer}>
         <Text style={styles.subtitle}>{t("otp_subtitle_text1")} {timer} {t("otp_subtitle_text2")}</Text>
+
         {timer == 0 && (
           <MyButton onPress={handleResendOTP} text='Resend OTP' />
         )}

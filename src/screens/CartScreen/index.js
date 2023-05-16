@@ -39,7 +39,8 @@ const CartScreen = ({ navigation }) => {
   const getTotal = () => {
     let newTotal = 0;
     myCartItems.map(item => {
-      newTotal = newTotal + item.qty * item.price;
+      // newTotal = newTotal + item.qty * item.price;
+      newTotal = newTotal + item.quantity * item.price;
       total = newTotal.toFixed(2);
     });
     return total;
@@ -71,8 +72,8 @@ const CartScreen = ({ navigation }) => {
               <TouchableOpacity
                 style={styles.buttonStyle}
                 onPress={() => {
-                  if (item.qty > 1) {
-                    dispatch(removeMyCartItem(item));
+                  if (item.quantity > 1) {
+                    dispatch(removeMyCartItem(item.id));
                   } else {
                     dispatch(removeItem(item.id));
 
@@ -81,7 +82,7 @@ const CartScreen = ({ navigation }) => {
                 <Text style={styles.buttonText}> - </Text>
               </TouchableOpacity>
 
-              <Text style={styles.qty}>{item.qty}</Text>
+              <Text style={styles.quantity}>{item.quantity}</Text>
 
               <TouchableOpacity
                 style={styles.buttonStyle}
@@ -142,7 +143,7 @@ const CartScreen = ({ navigation }) => {
             <View style={styles.footer}>
               <View style={styles.total1}>
                 <Text style={styles.total2}>
-                  {'Total:  ₹' + getTotal()}
+                  {t('total') + getTotal()}
                 </Text>
               </View>
               <View style={styles.total1}>

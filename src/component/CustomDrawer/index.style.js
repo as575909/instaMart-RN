@@ -10,6 +10,7 @@ import colors from '../../statics/styles/colors';
 export const styles = StyleSheet.create({
     containerCustomDrawer: {
         flex: 1,
+        marginTop: -5,
       },
       imgbg: {
         padding: moderateScale(10),

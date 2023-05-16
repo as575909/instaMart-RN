@@ -21,8 +21,13 @@ const ProductDetails = ({ navigation, route }) => {
   const item = ProductApi.find((element) => {
     return id === element.id;
   });
-  const cartItem = myCartItems.find((cartItem) => cartItem.id === item.id);
-  const qty = cartItem ? cartItem.qty : 0;
+  // const cartItem = myCartItems.find((cartItem) => cartItem.id === item.id);
+  // const qty = cartItem ? cartItem.qty : 0;
+
+
+  const cartItem = myCartItems.find(cartItem => cartItem.id === item.id);
+  const qty = cartItem ? cartItem.quantity : 0;
+
 
   return (
     <ScrollView>

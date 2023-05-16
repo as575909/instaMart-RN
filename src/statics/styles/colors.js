@@ -22,6 +22,11 @@ const colors = {
     yellow: '#FFFF00',
     drvoilet: '#aa18ea',
     drcg: '#333',
+    toggle_backgroundColorOn: "#4cd137",
+    toggle_backgroundColorOff: "#ecf0f1",
+    toggle_circleColorOff: "#bdc3c7",
+    toggle_circleColorOn: "#f5f6fa",
+    
 };
 
 export default colors;

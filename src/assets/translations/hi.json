@@ -15,6 +15,7 @@
     "welcome_tagline": "सबसे सस्ती कीमतों पर आसपास बेहतरीन आइटम खोजें।",
     "welcome_btn_signup": "साइन अप",
     "welcome_btn_login": "लॉग इन करें",
+    "total": "कुल राशि:  ₹",
     "Error1": "सभी विवरण भरें",
     "Title1": "शुरू करते हैं",
     "Title2": "पहले से ही खाता है?",
@@ -76,5 +77,8 @@
     "cart_emptycart_title": "आपके कार्ट में कोई आइटम नहीं है",
     "cart_itemsadded_title": "आइटम कार्ट में जोड़े गए",
     "cart_checkout_btn": "चेक आउट",
-    "addtocart_btn": "कार्ट में जोड़ें"
+    "addtocart_btn": "कार्ट में जोड़ें",
+    "permissions_title": "अनुमतियां",
+    "permissions_title_camera": "कैमरा",
+    "permissions_title_notification": "सूचनाएं"
 }

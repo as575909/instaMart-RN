@@ -10,9 +10,12 @@ const QtyMng = ({item}) => {
   const dispatch = useDispatch();
   const myCartItems = useSelector((state) => state.cart);
 
-  const cartItem = myCartItems.find((cartItem) => cartItem.id === item.id);
-    const qty = cartItem ? cartItem.qty : 0;
+  // const cartItem = myCartItems.find((cartItem) => cartItem.id === item.id);
+  //   const qty = cartItem ? cartItem.qty : 0;
 
+
+  const cartItem = myCartItems.find(cartItem => cartItem.id === item.id);
+  const qty = cartItem ? cartItem.quantity : 0;
 
   return (
     <View style={styles.buttonContainer}>
@@ -20,7 +23,7 @@ const QtyMng = ({item}) => {
                 style={styles.buttonStyle}
                 onPress={() => {
                   if (qty > 1) {
-                    dispatch(removeMyCartItem(item));
+                    dispatch(removeMyCartItem(item.id));
                   } else {
                     dispatch(removeItem(item.id));
                   }

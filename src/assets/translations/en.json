@@ -15,6 +15,7 @@
     "welcome_tagline": "Find the best items around you at lowest price.",
     "welcome_btn_signup": "Sign up",
     "welcome_btn_login": "Log In",
+    "total": "Total:  ₹",
     "Error1": "Please fill all details",
     "Title1": "Let's get Started",
     "Title2": "Already Have an account?",
@@ -76,7 +77,10 @@
     "cart_emptycart_title": "You have no item in your cart",
     "cart_itemsadded_title": "Items added to cart",
     "cart_checkout_btn": "Check Out",
-    "addtocart_btn": "Add to Cart"
+    "addtocart_btn": "Add to Cart",
+    "permissions_title": "Permissions",
+    "permissions_title_camera": "Camera",
+    "permissions_title_notification": "Notifications"
     
     }
     

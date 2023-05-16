@@ -10,6 +10,7 @@ const LocationComponent = () => {
   useEffect(() => {
     Geolocation.getCurrentPosition(
       position => {
+        
         setLatitude(position.coords.latitude);
         setLongitude(position.coords.longitude);
       },
@@ -17,6 +18,8 @@ const LocationComponent = () => {
       {enableHighAccuracy: true, timeout: 50000, maximumAge: 1000},
     );
   }, []);
+
+  console.log(latitude, longitude);
 
   return (
     <View style={styles.container}>
