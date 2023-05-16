@@ -1,6 +1,5 @@
 import { View, Image, ScrollView,} from "react-native";
 import React from "react";
-import ProductApi from "../../api/ProductApi";
 import { addProductToMyCart } from "../../redux/reducers/MyCartSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { styles } from "./index.style";
@@ -15,16 +14,10 @@ const ProductDetails = ({ navigation, route }) => {
   const currencySymbol = CURRENCY_SYMBOLS['RUPEE'];
   const myCartItems = useSelector((state) => state.cart);
   const dispatch = useDispatch();
-  const id = route.params.courseId;
-  console.log(id, 'product detail');
-
-  const item = ProductApi.find((element) => {
-    return id === element.id;
-  });
-  // const cartItem = myCartItems.find((cartItem) => cartItem.id === item.id);
-  // const qty = cartItem ? cartItem.qty : 0;
-
-
+  // const id = route.params.courseId;
+  
+  const item = route.params.item;
+  //console.log(item, 'product detail');
   const cartItem = myCartItems.find(cartItem => cartItem.id === item.id);
   const qty = cartItem ? cartItem.quantity : 0;
 

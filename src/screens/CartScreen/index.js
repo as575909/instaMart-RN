@@ -48,7 +48,7 @@ const CartScreen = ({ navigation }) => {
 
 
   const courseCard = ({ item }) => {
-    console.log(item, 'hi');
+    //console.log(item, 'hi');
     return (
       <SafeAreaView>
         <View style={styles.mainContainer}>

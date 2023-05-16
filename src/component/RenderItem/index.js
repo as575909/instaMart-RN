@@ -23,7 +23,7 @@ const CourseCard = ({ item }) => {
 
   return (
     <View style={styles.mainContainer}>
-      <TouchableOpacity onPress={() => navigation.navigate('ProductDetails', { courseId: item.id })}>
+      <TouchableOpacity onPress={() => navigation.navigate('ProductDetails', {item})}>
         <View style={styles.courseContainer}>
           <View>
             <Image style={styles.cardImage} source={{ uri: item.image }} resizeMode="contain" />
