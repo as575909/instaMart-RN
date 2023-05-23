@@ -1,0 +1,527 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.instamart"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\User\Documents\instamart\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->C:\Users\User\Documents\instamart\android\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\User\Documents\instamart\android\app\src\main\AndroidManifest.xml:3:5-67
+11-->C:\Users\User\Documents\instamart\android\app\src\main\AndroidManifest.xml:3:22-64
+12    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+12-->C:\Users\User\Documents\instamart\android\app\src\main\AndroidManifest.xml:4:5-79
+12-->C:\Users\User\Documents\instamart\android\app\src\main\AndroidManifest.xml:4:22-76
+13    <uses-permission android:name="android.permission.CAMERA" />
+13-->C:\Users\User\Documents\instamart\android\app\src\main\AndroidManifest.xml:5:1-60
+13-->C:\Users\User\Documents\instamart\android\app\src\main\AndroidManifest.xml:5:18-58
+14    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+14-->C:\Users\User\Documents\instamart\android\app\src\main\AndroidManifest.xml:6:1-73
+14-->C:\Users\User\Documents\instamart\android\app\src\main\AndroidManifest.xml:6:18-70
+15    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+15-->C:\Users\User\Documents\instamart\android\app\src\main\AndroidManifest.xml:7:2-68
+15-->C:\Users\User\Documents\instamart\android\app\src\main\AndroidManifest.xml:7:19-65
+16
+17    <uses-feature
+17-->C:\Users\User\Documents\instamart\android\app\src\main\AndroidManifest.xml:8:1-81
+18        android:name="android.hardware.camera"
+18-->C:\Users\User\Documents\instamart\android\app\src\main\AndroidManifest.xml:8:15-53
+19        android:required="false" />
+19-->C:\Users\User\Documents\instamart\android\app\src\main\AndroidManifest.xml:8:54-78
+20    <uses-feature
+20-->C:\Users\User\Documents\instamart\android\app\src\main\AndroidManifest.xml:8:1-81
+21        android:name="android.hardware.camera"
+21-->C:\Users\User\Documents\instamart\android\app\src\main\AndroidManifest.xml:8:15-53
+22        android:required="false" />
+22-->C:\Users\User\Documents\instamart\android\app\src\main\AndroidManifest.xml:8:54-78
+23
+24    <uses-permission android:name="android.permission.WAKE_LOCK" />
+24-->[:react-native-firebase_auth] C:\Users\User\Documents\instamart\node_modules\@react-native-firebase\auth\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:5-68
+24-->[:react-native-firebase_auth] C:\Users\User\Documents\instamart\node_modules\@react-native-firebase\auth\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:22-65
+25    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+25-->[:react-native-firebase_auth] C:\Users\User\Documents\instamart\node_modules\@react-native-firebase\auth\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:11:5-79
+25-->[:react-native-firebase_auth] C:\Users\User\Documents\instamart\node_modules\@react-native-firebase\auth\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:11:22-76
+26
+27    <queries>
+27-->[:react-native-image-crop-picker] C:\Users\User\Documents\instamart\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-13:15
+28        <intent>
+28-->[:react-native-image-crop-picker] C:\Users\User\Documents\instamart\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-12:18
+29            <action android:name="android.media.action.IMAGE_CAPTURE" />
+29-->[:react-native-image-crop-picker] C:\Users\User\Documents\instamart\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-73
+29-->[:react-native-image-crop-picker] C:\Users\User\Documents\instamart\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:11:21-70
+30        </intent>
+31    </queries>
+32
+33    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+33-->[:react-native-image-crop-picker] C:\Users\User\Documents\instamart\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:15:5-81
+33-->[:react-native-image-crop-picker] C:\Users\User\Documents\instamart\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:15:22-78
+34    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- for android -->
+34-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\User\.gradle\caches\transforms-3\eeb8b6d825fc36f2224fdbd96d99b021\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:28:5-82
+34-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\User\.gradle\caches\transforms-3\eeb8b6d825fc36f2224fdbd96d99b021\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:28:22-79
+35    <!-- <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/> -->
+36    <!-- <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/> -->
+37    <!-- <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> -->
+38    <!-- <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" /> -->
+39    <!-- for Samsung -->
+40    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+40-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-3\d9c38b96ef4083a6c8d9307ed6fd1ccd\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:19:5-86
+40-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-3\d9c38b96ef4083a6c8d9307ed6fd1ccd\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:19:22-83
+41    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
+41-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-3\d9c38b96ef4083a6c8d9307ed6fd1ccd\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:20:5-87
+41-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-3\d9c38b96ef4083a6c8d9307ed6fd1ccd\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:20:22-84
+42    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+42-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-3\d9c38b96ef4083a6c8d9307ed6fd1ccd\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:23:5-81
+42-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-3\d9c38b96ef4083a6c8d9307ed6fd1ccd\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:23:22-78
+43    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
+43-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-3\d9c38b96ef4083a6c8d9307ed6fd1ccd\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:24:5-83
+43-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-3\d9c38b96ef4083a6c8d9307ed6fd1ccd\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:24:22-80
+44    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+44-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-3\d9c38b96ef4083a6c8d9307ed6fd1ccd\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:27:5-88
+44-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-3\d9c38b96ef4083a6c8d9307ed6fd1ccd\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:27:22-85
+45    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- for apex -->
+45-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-3\d9c38b96ef4083a6c8d9307ed6fd1ccd\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:28:5-92
+45-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-3\d9c38b96ef4083a6c8d9307ed6fd1ccd\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:28:22-89
+46    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
+46-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-3\d9c38b96ef4083a6c8d9307ed6fd1ccd\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:31:5-84
+46-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-3\d9c38b96ef4083a6c8d9307ed6fd1ccd\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:31:22-81
+47    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- for huawei -->
+47-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-3\d9c38b96ef4083a6c8d9307ed6fd1ccd\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:34:5-83
+47-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-3\d9c38b96ef4083a6c8d9307ed6fd1ccd\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:34:22-80
+48    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+48-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-3\d9c38b96ef4083a6c8d9307ed6fd1ccd\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:37:5-91
+48-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-3\d9c38b96ef4083a6c8d9307ed6fd1ccd\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:37:22-88
+49    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+49-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-3\d9c38b96ef4083a6c8d9307ed6fd1ccd\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:38:5-92
+49-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-3\d9c38b96ef4083a6c8d9307ed6fd1ccd\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:38:22-89
+50    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- for ZUK -->
+50-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-3\d9c38b96ef4083a6c8d9307ed6fd1ccd\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:39:5-93
+50-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-3\d9c38b96ef4083a6c8d9307ed6fd1ccd\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:39:22-90
+51    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- for OPPO -->
+51-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-3\d9c38b96ef4083a6c8d9307ed6fd1ccd\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:42:5-73
+51-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-3\d9c38b96ef4083a6c8d9307ed6fd1ccd\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:42:22-70
+52    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+52-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-3\d9c38b96ef4083a6c8d9307ed6fd1ccd\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:45:5-82
+52-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-3\d9c38b96ef4083a6c8d9307ed6fd1ccd\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:45:22-79
+53    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- for EvMe -->
+53-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-3\d9c38b96ef4083a6c8d9307ed6fd1ccd\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:46:5-83
+53-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-3\d9c38b96ef4083a6c8d9307ed6fd1ccd\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:46:22-80
+54    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+54-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-3\d9c38b96ef4083a6c8d9307ed6fd1ccd\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:49:5-88
+54-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-3\d9c38b96ef4083a6c8d9307ed6fd1ccd\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:49:22-85
+55    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+55-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-3\d9c38b96ef4083a6c8d9307ed6fd1ccd\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:50:5-89
+55-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-3\d9c38b96ef4083a6c8d9307ed6fd1ccd\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:50:22-86
+56
+57    <application
+57-->C:\Users\User\Documents\instamart\android\app\src\main\AndroidManifest.xml:11:5-30:19
+58        android:name="com.instamart.MainApplication"
+58-->C:\Users\User\Documents\instamart\android\app\src\main\AndroidManifest.xml:12:7-38
+59        android:allowBackup="false"
+59-->C:\Users\User\Documents\instamart\android\app\src\main\AndroidManifest.xml:16:7-34
+60        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+60-->[androidx.core:core:1.7.0] C:\Users\User\.gradle\caches\transforms-3\5c85eefd62ee9cacecdf09834619c6ef\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+61        android:icon="@mipmap/ic_launcher"
+61-->C:\Users\User\Documents\instamart\android\app\src\main\AndroidManifest.xml:14:7-41
+62        android:label="@string/app_name"
+62-->C:\Users\User\Documents\instamart\android\app\src\main\AndroidManifest.xml:13:7-39
+63        android:roundIcon="@mipmap/ic_launcher_round"
+63-->C:\Users\User\Documents\instamart\android\app\src\main\AndroidManifest.xml:15:7-52
+64        android:theme="@style/AppTheme" >
+64-->C:\Users\User\Documents\instamart\android\app\src\main\AndroidManifest.xml:17:7-38
+65        <activity
+65-->C:\Users\User\Documents\instamart\android\app\src\main\AndroidManifest.xml:18:7-29:18
+66            android:name="com.instamart.MainActivity"
+66-->C:\Users\User\Documents\instamart\android\app\src\main\AndroidManifest.xml:19:9-37
+67            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
+67-->C:\Users\User\Documents\instamart\android\app\src\main\AndroidManifest.xml:21:9-118
+68            android:exported="true"
+68-->C:\Users\User\Documents\instamart\android\app\src\main\AndroidManifest.xml:24:9-32
+69            android:label="@string/app_name"
+69-->C:\Users\User\Documents\instamart\android\app\src\main\AndroidManifest.xml:20:9-41
+70            android:launchMode="singleTask"
+70-->C:\Users\User\Documents\instamart\android\app\src\main\AndroidManifest.xml:22:9-40
+71            android:windowSoftInputMode="adjustResize" >
+71-->C:\Users\User\Documents\instamart\android\app\src\main\AndroidManifest.xml:23:9-51
+72            <intent-filter>
+72-->C:\Users\User\Documents\instamart\android\app\src\main\AndroidManifest.xml:25:9-28:25
+73                <action android:name="android.intent.action.MAIN" />
+73-->C:\Users\User\Documents\instamart\android\app\src\main\AndroidManifest.xml:26:13-65
+73-->C:\Users\User\Documents\instamart\android\app\src\main\AndroidManifest.xml:26:21-62
+74
+75                <category android:name="android.intent.category.LAUNCHER" />
+75-->C:\Users\User\Documents\instamart\android\app\src\main\AndroidManifest.xml:27:13-73
+75-->C:\Users\User\Documents\instamart\android\app\src\main\AndroidManifest.xml:27:23-70
+76            </intent-filter>
+77        </activity>
+78
+79        <service
+79-->[:react-native-firebase_messaging] C:\Users\User\Documents\instamart\node_modules\@react-native-firebase\messaging\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:14:9-16:40
+80            android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingHeadlessService"
+80-->[:react-native-firebase_messaging] C:\Users\User\Documents\instamart\node_modules\@react-native-firebase\messaging\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:15:13-103
+81            android:exported="false" />
+81-->[:react-native-firebase_messaging] C:\Users\User\Documents\instamart\node_modules\@react-native-firebase\messaging\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:16:13-37
+82        <service
+82-->[:react-native-firebase_messaging] C:\Users\User\Documents\instamart\node_modules\@react-native-firebase\messaging\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:17:9-23:19
+83            android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingService"
+83-->[:react-native-firebase_messaging] C:\Users\User\Documents\instamart\node_modules\@react-native-firebase\messaging\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:18:13-95
+84            android:exported="false" >
+84-->[:react-native-firebase_messaging] C:\Users\User\Documents\instamart\node_modules\@react-native-firebase\messaging\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:19:13-37
+85            <intent-filter>
+85-->[:react-native-firebase_messaging] C:\Users\User\Documents\instamart\node_modules\@react-native-firebase\messaging\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:20:13-22:29
+86                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+86-->[:react-native-firebase_messaging] C:\Users\User\Documents\instamart\node_modules\@react-native-firebase\messaging\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:21:17-78
+86-->[:react-native-firebase_messaging] C:\Users\User\Documents\instamart\node_modules\@react-native-firebase\messaging\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:21:25-75
+87            </intent-filter>
+88        </service>
+89
+90        <receiver
+90-->[:react-native-firebase_messaging] C:\Users\User\Documents\instamart\node_modules\@react-native-firebase\messaging\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:25:9-32:20
+91            android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingReceiver"
+91-->[:react-native-firebase_messaging] C:\Users\User\Documents\instamart\node_modules\@react-native-firebase\messaging\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:26:13-96
+92            android:exported="true"
+92-->[:react-native-firebase_messaging] C:\Users\User\Documents\instamart\node_modules\@react-native-firebase\messaging\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:27:13-36
+93            android:permission="com.google.android.c2dm.permission.SEND" >
+93-->[:react-native-firebase_messaging] C:\Users\User\Documents\instamart\node_modules\@react-native-firebase\messaging\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:28:13-73
+94            <intent-filter>
+94-->[:react-native-firebase_messaging] C:\Users\User\Documents\instamart\node_modules\@react-native-firebase\messaging\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:29:13-31:29
+95                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+95-->[:react-native-firebase_messaging] C:\Users\User\Documents\instamart\node_modules\@react-native-firebase\messaging\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:30:17-81
+95-->[:react-native-firebase_messaging] C:\Users\User\Documents\instamart\node_modules\@react-native-firebase\messaging\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:30:25-78
+96            </intent-filter>
+97        </receiver>
+98
+99        <meta-data
+99-->[:react-native-firebase_messaging] C:\Users\User\Documents\instamart\node_modules\@react-native-firebase\messaging\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:34:9-36:36
+100            android:name="firebase_messaging_auto_init_enabled"
+100-->[:react-native-firebase_messaging] C:\Users\User\Documents\instamart\node_modules\@react-native-firebase\messaging\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:35:13-64
+101            android:value="true" />
+101-->[:react-native-firebase_messaging] C:\Users\User\Documents\instamart\node_modules\@react-native-firebase\messaging\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:36:13-33
+102        <meta-data
+102-->[:react-native-firebase_messaging] C:\Users\User\Documents\instamart\node_modules\@react-native-firebase\messaging\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:37:9-39:32
+103            android:name="com.google.firebase.messaging.default_notification_channel_id"
+103-->[:react-native-firebase_messaging] C:\Users\User\Documents\instamart\node_modules\@react-native-firebase\messaging\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:38:13-89
+104            android:value="" />
+104-->[:react-native-firebase_messaging] C:\Users\User\Documents\instamart\node_modules\@react-native-firebase\messaging\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:39:13-29
+105        <meta-data
+105-->[:react-native-firebase_messaging] C:\Users\User\Documents\instamart\node_modules\@react-native-firebase\messaging\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:40:9-42:47
+106            android:name="com.google.firebase.messaging.default_notification_color"
+106-->[:react-native-firebase_messaging] C:\Users\User\Documents\instamart\node_modules\@react-native-firebase\messaging\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:41:13-84
+107            android:resource="@color/white" />
+107-->[:react-native-firebase_messaging] C:\Users\User\Documents\instamart\node_modules\@react-native-firebase\messaging\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:42:13-44
+108        <meta-data
+108-->[:react-native-firebase_app] C:\Users\User\Documents\instamart\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:11:9-13:36
+109            android:name="app_data_collection_default_enabled"
+109-->[:react-native-firebase_app] C:\Users\User\Documents\instamart\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-63
+110            android:value="true" />
+110-->[:react-native-firebase_app] C:\Users\User\Documents\instamart\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-33
+111
+112        <service
+112-->[:react-native-firebase_app] C:\Users\User\Documents\instamart\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:15:9-23:19
+113            android:name="com.google.firebase.components.ComponentDiscoveryService"
+113-->[:react-native-firebase_app] C:\Users\User\Documents\instamart\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:16:13-84
+114            android:directBootAware="true"
+114-->[:react-native-firebase_app] C:\Users\User\Documents\instamart\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:17:13-43
+115            android:exported="false" >
+115-->[:react-native-firebase_app] C:\Users\User\Documents\instamart\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:18:13-37
+116            <meta-data
+116-->[:react-native-firebase_app] C:\Users\User\Documents\instamart\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:20:13-22:85
+117                android:name="com.google.firebase.components:io.invertase.firebase.app.ReactNativeFirebaseAppRegistrar"
+117-->[:react-native-firebase_app] C:\Users\User\Documents\instamart\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:21:17-120
+118                android:value="com.google.firebase.components.ComponentRegistrar" />
+118-->[:react-native-firebase_app] C:\Users\User\Documents\instamart\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:22:17-82
+119            <meta-data
+119-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\User\.gradle\caches\transforms-3\eeb8b6d825fc36f2224fdbd96d99b021\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:55:13-57:85
+120                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+120-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\User\.gradle\caches\transforms-3\eeb8b6d825fc36f2224fdbd96d99b021\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:56:17-119
+121                android:value="com.google.firebase.components.ComponentRegistrar" />
+121-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\User\.gradle\caches\transforms-3\eeb8b6d825fc36f2224fdbd96d99b021\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:57:17-82
+122            <meta-data
+122-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\User\.gradle\caches\transforms-3\2cc9de08e2ba2e95e96cdd19c6d3df79\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:27:13-29:85
+123                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+123-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\User\.gradle\caches\transforms-3\2cc9de08e2ba2e95e96cdd19c6d3df79\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:28:17-115
+124                android:value="com.google.firebase.components.ComponentRegistrar" />
+124-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\User\.gradle\caches\transforms-3\2cc9de08e2ba2e95e96cdd19c6d3df79\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:29:17-82
+125            <meta-data
+125-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:69:13-71:85
+126                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+126-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:70:17-109
+127                android:value="com.google.firebase.components.ComponentRegistrar" />
+127-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:71:17-82
+128            <meta-data
+128-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\User\.gradle\caches\transforms-3\99ec38bfd3590a3a3fc09bd5c25d93fe\transformed\jetified-firebase-installations-17.1.3\AndroidManifest.xml:17:13-19:85
+129                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+129-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\User\.gradle\caches\transforms-3\99ec38bfd3590a3a3fc09bd5c25d93fe\transformed\jetified-firebase-installations-17.1.3\AndroidManifest.xml:18:17-127
+130                android:value="com.google.firebase.components.ComponentRegistrar" />
+130-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\User\.gradle\caches\transforms-3\99ec38bfd3590a3a3fc09bd5c25d93fe\transformed\jetified-firebase-installations-17.1.3\AndroidManifest.xml:19:17-82
+131        </service>
+132
+133        <provider
+133-->[:react-native-firebase_app] C:\Users\User\Documents\instamart\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:25:9-29:38
+134            android:name="io.invertase.firebase.app.ReactNativeFirebaseAppInitProvider"
+134-->[:react-native-firebase_app] C:\Users\User\Documents\instamart\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:26:13-88
+135            android:authorities="com.instamart.reactnativefirebaseappinitprovider"
+135-->[:react-native-firebase_app] C:\Users\User\Documents\instamart\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:27:13-86
+136            android:exported="false"
+136-->[:react-native-firebase_app] C:\Users\User\Documents\instamart\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:28:13-37
+137            android:initOrder="99" />
+137-->[:react-native-firebase_app] C:\Users\User\Documents\instamart\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:29:13-35
+138        <provider
+138-->[:react-native-image-crop-picker] C:\Users\User\Documents\instamart\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:18:9-26:20
+139            android:name="com.reactnative.ivpusic.imagepicker.IvpusicImagePickerFileProvider"
+139-->[:react-native-image-crop-picker] C:\Users\User\Documents\instamart\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:19:13-94
+140            android:authorities="com.instamart.provider"
+140-->[:react-native-image-crop-picker] C:\Users\User\Documents\instamart\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:20:13-60
+141            android:exported="false"
+141-->[:react-native-image-crop-picker] C:\Users\User\Documents\instamart\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:21:13-37
+142            android:grantUriPermissions="true" >
+142-->[:react-native-image-crop-picker] C:\Users\User\Documents\instamart\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:22:13-47
+143            <meta-data
+143-->[:react-native-image-crop-picker] C:\Users\User\Documents\instamart\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:23:13-25:78
+144                android:name="android.support.FILE_PROVIDER_PATHS"
+144-->[:react-native-image-crop-picker] C:\Users\User\Documents\instamart\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:24:17-67
+145                android:resource="@xml/ivpusic_imagepicker_provider_paths" />
+145-->[:react-native-image-crop-picker] C:\Users\User\Documents\instamart\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:25:17-75
+146        </provider>
+147
+148        <activity
+148-->[:react-native-image-crop-picker] C:\Users\User\Documents\instamart\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:28:9-30:72
+149            android:name="com.yalantis.ucrop.UCropActivity"
+149-->[:react-native-image-crop-picker] C:\Users\User\Documents\instamart\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:29:13-60
+150            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+150-->[:react-native-image-crop-picker] C:\Users\User\Documents\instamart\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:30:13-69
+151
+152        <provider
+152-->[:react-native-webview] C:\Users\User\Documents\instamart\node_modules\react-native-webview\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-18:20
+153            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
+153-->[:react-native-webview] C:\Users\User\Documents\instamart\node_modules\react-native-webview\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-83
+154            android:authorities="com.instamart.fileprovider"
+154-->[:react-native-webview] C:\Users\User\Documents\instamart\node_modules\react-native-webview\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-64
+155            android:exported="false"
+155-->[:react-native-webview] C:\Users\User\Documents\instamart\node_modules\react-native-webview\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-37
+156            android:grantUriPermissions="true" >
+156-->[:react-native-webview] C:\Users\User\Documents\instamart\node_modules\react-native-webview\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:14:13-47
+157            <meta-data
+157-->[:react-native-image-crop-picker] C:\Users\User\Documents\instamart\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:23:13-25:78
+158                android:name="android.support.FILE_PROVIDER_PATHS"
+158-->[:react-native-image-crop-picker] C:\Users\User\Documents\instamart\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:24:17-67
+159                android:resource="@xml/file_provider_paths" />
+159-->[:react-native-image-crop-picker] C:\Users\User\Documents\instamart\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:25:17-75
+160        </provider>
+161
+162        <receiver
+162-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\User\.gradle\caches\transforms-3\eeb8b6d825fc36f2224fdbd96d99b021\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:31:9-38:20
+163            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+163-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\User\.gradle\caches\transforms-3\eeb8b6d825fc36f2224fdbd96d99b021\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:32:13-78
+164            android:exported="true"
+164-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\User\.gradle\caches\transforms-3\eeb8b6d825fc36f2224fdbd96d99b021\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:33:13-36
+165            android:permission="com.google.android.c2dm.permission.SEND" >
+165-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\User\.gradle\caches\transforms-3\eeb8b6d825fc36f2224fdbd96d99b021\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:34:13-73
+166            <intent-filter>
+166-->[:react-native-firebase_messaging] C:\Users\User\Documents\instamart\node_modules\@react-native-firebase\messaging\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:29:13-31:29
+167                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+167-->[:react-native-firebase_messaging] C:\Users\User\Documents\instamart\node_modules\@react-native-firebase\messaging\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:30:17-81
+167-->[:react-native-firebase_messaging] C:\Users\User\Documents\instamart\node_modules\@react-native-firebase\messaging\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:30:25-78
+168            </intent-filter>
+169        </receiver>
+170        <!--
+171             FirebaseMessagingService performs security checks at runtime,
+172             but set to not exported to explicitly avoid allowing another app to call it.
+173        -->
+174        <service
+174-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\User\.gradle\caches\transforms-3\eeb8b6d825fc36f2224fdbd96d99b021\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:44:9-51:19
+175            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+175-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\User\.gradle\caches\transforms-3\eeb8b6d825fc36f2224fdbd96d99b021\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:45:13-82
+176            android:directBootAware="true"
+176-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\User\.gradle\caches\transforms-3\eeb8b6d825fc36f2224fdbd96d99b021\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:46:13-43
+177            android:exported="false" >
+177-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\User\.gradle\caches\transforms-3\eeb8b6d825fc36f2224fdbd96d99b021\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:47:13-37
+178            <intent-filter android:priority="-500" >
+178-->[:react-native-firebase_messaging] C:\Users\User\Documents\instamart\node_modules\@react-native-firebase\messaging\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:20:13-22:29
+179                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+179-->[:react-native-firebase_messaging] C:\Users\User\Documents\instamart\node_modules\@react-native-firebase\messaging\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:21:17-78
+179-->[:react-native-firebase_messaging] C:\Users\User\Documents\instamart\node_modules\@react-native-firebase\messaging\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:21:25-75
+180            </intent-filter>
+181        </service>
+182        <service
+182-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\User\.gradle\caches\transforms-3\83c3194237fe0c194601a5a7930c0718\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:28:9-34:19
+183            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+183-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\User\.gradle\caches\transforms-3\83c3194237fe0c194601a5a7930c0718\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:29:13-103
+184            android:exported="false" >
+184-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\User\.gradle\caches\transforms-3\83c3194237fe0c194601a5a7930c0718\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:30:13-37
+185            <meta-data
+185-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\User\.gradle\caches\transforms-3\83c3194237fe0c194601a5a7930c0718\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:31:13-33:39
+186                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+186-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\User\.gradle\caches\transforms-3\83c3194237fe0c194601a5a7930c0718\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:32:17-94
+187                android:value="cct" />
+187-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\User\.gradle\caches\transforms-3\83c3194237fe0c194601a5a7930c0718\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:33:17-36
+188        </service>
+189        <service
+189-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\User\.gradle\caches\transforms-3\22dde47cfb97fb1793538dbe86681f9d\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:26:9-30:19
+190            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+190-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\User\.gradle\caches\transforms-3\22dde47cfb97fb1793538dbe86681f9d\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:27:13-117
+191            android:exported="false"
+191-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\User\.gradle\caches\transforms-3\22dde47cfb97fb1793538dbe86681f9d\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:28:13-37
+192            android:permission="android.permission.BIND_JOB_SERVICE" >
+192-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\User\.gradle\caches\transforms-3\22dde47cfb97fb1793538dbe86681f9d\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:29:13-69
+193        </service>
+194
+195        <receiver
+195-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\User\.gradle\caches\transforms-3\22dde47cfb97fb1793538dbe86681f9d\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:32:9-34:40
+196            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+196-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\User\.gradle\caches\transforms-3\22dde47cfb97fb1793538dbe86681f9d\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:33:13-132
+197            android:exported="false" />
+197-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\User\.gradle\caches\transforms-3\22dde47cfb97fb1793538dbe86681f9d\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:34:13-37
+198
+199        <activity
+199-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:29:9-46:20
+200            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+200-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:30:13-80
+201            android:excludeFromRecents="true"
+201-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:31:13-46
+202            android:exported="true"
+202-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:32:13-36
+203            android:launchMode="singleTask"
+203-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:33:13-44
+204            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+204-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:34:13-72
+205            <intent-filter>
+205-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:35:13-45:29
+206                <action android:name="android.intent.action.VIEW" />
+206-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:36:17-69
+206-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:36:25-66
+207
+208                <category android:name="android.intent.category.DEFAULT" />
+208-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:38:17-76
+208-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:38:27-73
+209                <category android:name="android.intent.category.BROWSABLE" />
+209-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:39:17-78
+209-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:39:27-75
+210
+211                <data
+211-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:41:17-44:51
+212                    android:host="firebase.auth"
+212-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:42:21-49
+213                    android:path="/"
+213-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:43:21-37
+214                    android:scheme="genericidp" />
+214-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:44:21-48
+215            </intent-filter>
+216        </activity>
+217        <activity
+217-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:47:9-64:20
+218            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+218-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:48:13-79
+219            android:excludeFromRecents="true"
+219-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:49:13-46
+220            android:exported="true"
+220-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:50:13-36
+221            android:launchMode="singleTask"
+221-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:51:13-44
+222            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+222-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:52:13-72
+223            <intent-filter>
+223-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:53:13-63:29
+224                <action android:name="android.intent.action.VIEW" />
+224-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:36:17-69
+224-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:36:25-66
+225
+226                <category android:name="android.intent.category.DEFAULT" />
+226-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:38:17-76
+226-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:38:27-73
+227                <category android:name="android.intent.category.BROWSABLE" />
+227-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:39:17-78
+227-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:39:27-75
+228
+229                <data
+229-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:41:17-44:51
+230                    android:host="firebase.auth"
+230-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:42:21-49
+231                    android:path="/"
+231-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:43:21-37
+232                    android:scheme="recaptcha" />
+232-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\User\.gradle\caches\transforms-3\4a7ebf217048fd02cb0d2c9385fbf351\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:44:21-48
+233            </intent-filter>
+234        </activity>
+235
+236        <provider
+236-->[com.google.firebase:firebase-common:20.3.2] C:\Users\User\.gradle\caches\transforms-3\d501d11b51b9b45c2628fe2147cac516\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:25:9-30:39
+237            android:name="com.google.firebase.provider.FirebaseInitProvider"
+237-->[com.google.firebase:firebase-common:20.3.2] C:\Users\User\.gradle\caches\transforms-3\d501d11b51b9b45c2628fe2147cac516\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:26:13-77
+238            android:authorities="com.instamart.firebaseinitprovider"
+238-->[com.google.firebase:firebase-common:20.3.2] C:\Users\User\.gradle\caches\transforms-3\d501d11b51b9b45c2628fe2147cac516\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:27:13-72
+239            android:directBootAware="true"
+239-->[com.google.firebase:firebase-common:20.3.2] C:\Users\User\.gradle\caches\transforms-3\d501d11b51b9b45c2628fe2147cac516\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:28:13-43
+240            android:exported="false"
+240-->[com.google.firebase:firebase-common:20.3.2] C:\Users\User\.gradle\caches\transforms-3\d501d11b51b9b45c2628fe2147cac516\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:29:13-37
+241            android:initOrder="100" />
+241-->[com.google.firebase:firebase-common:20.3.2] C:\Users\User\.gradle\caches\transforms-3\d501d11b51b9b45c2628fe2147cac516\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:30:13-36
+242
+243        <activity
+243-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\User\.gradle\caches\transforms-3\2c72d4c775f629c439aaa1d0c0739c8c\transformed\jetified-play-services-auth-20.3.0\AndroidManifest.xml:23:9-27:75
+244            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+244-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\User\.gradle\caches\transforms-3\2c72d4c775f629c439aaa1d0c0739c8c\transformed\jetified-play-services-auth-20.3.0\AndroidManifest.xml:24:13-93
+245            android:excludeFromRecents="true"
+245-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\User\.gradle\caches\transforms-3\2c72d4c775f629c439aaa1d0c0739c8c\transformed\jetified-play-services-auth-20.3.0\AndroidManifest.xml:25:13-46
+246            android:exported="false"
+246-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\User\.gradle\caches\transforms-3\2c72d4c775f629c439aaa1d0c0739c8c\transformed\jetified-play-services-auth-20.3.0\AndroidManifest.xml:26:13-37
+247            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+247-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\User\.gradle\caches\transforms-3\2c72d4c775f629c439aaa1d0c0739c8c\transformed\jetified-play-services-auth-20.3.0\AndroidManifest.xml:27:13-72
+248        <!--
+249            Service handling Google Sign-In user revocation. For apps that do not integrate with
+250            Google Sign-In, this service will never be started.
+251        -->
+252        <service
+252-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\User\.gradle\caches\transforms-3\2c72d4c775f629c439aaa1d0c0739c8c\transformed\jetified-play-services-auth-20.3.0\AndroidManifest.xml:33:9-37:51
+253            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+253-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\User\.gradle\caches\transforms-3\2c72d4c775f629c439aaa1d0c0739c8c\transformed\jetified-play-services-auth-20.3.0\AndroidManifest.xml:34:13-89
+254            android:exported="true"
+254-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\User\.gradle\caches\transforms-3\2c72d4c775f629c439aaa1d0c0739c8c\transformed\jetified-play-services-auth-20.3.0\AndroidManifest.xml:35:13-36
+255            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+255-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\User\.gradle\caches\transforms-3\2c72d4c775f629c439aaa1d0c0739c8c\transformed\jetified-play-services-auth-20.3.0\AndroidManifest.xml:36:13-107
+256            android:visibleToInstantApps="true" />
+256-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\User\.gradle\caches\transforms-3\2c72d4c775f629c439aaa1d0c0739c8c\transformed\jetified-play-services-auth-20.3.0\AndroidManifest.xml:37:13-48
+257
+258        <activity
+258-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\User\.gradle\caches\transforms-3\14534f11995b76409b349d353840fdfc\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+259            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+259-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\User\.gradle\caches\transforms-3\14534f11995b76409b349d353840fdfc\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+260            android:exported="false"
+260-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\User\.gradle\caches\transforms-3\14534f11995b76409b349d353840fdfc\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+261            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+261-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\User\.gradle\caches\transforms-3\14534f11995b76409b349d353840fdfc\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+262
+263        <meta-data
+263-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\User\.gradle\caches\transforms-3\b8b032a9f011549aa4242ce10998c5f2\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+264            android:name="com.google.android.gms.version"
+264-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\User\.gradle\caches\transforms-3\b8b032a9f011549aa4242ce10998c5f2\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+265            android:value="@integer/google_play_services_version" />
+265-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\User\.gradle\caches\transforms-3\b8b032a9f011549aa4242ce10998c5f2\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+266
+267        <provider
+267-->[androidx.emoji2:emoji2:1.0.0] C:\Users\User\.gradle\caches\transforms-3\9aaa1b590eb2f3bcac6c49d3fc8b84cf\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+268            android:name="androidx.startup.InitializationProvider"
+268-->[androidx.emoji2:emoji2:1.0.0] C:\Users\User\.gradle\caches\transforms-3\9aaa1b590eb2f3bcac6c49d3fc8b84cf\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+269            android:authorities="com.instamart.androidx-startup"
+269-->[androidx.emoji2:emoji2:1.0.0] C:\Users\User\.gradle\caches\transforms-3\9aaa1b590eb2f3bcac6c49d3fc8b84cf\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+270            android:exported="false" >
+270-->[androidx.emoji2:emoji2:1.0.0] C:\Users\User\.gradle\caches\transforms-3\9aaa1b590eb2f3bcac6c49d3fc8b84cf\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+271            <meta-data
+271-->[androidx.emoji2:emoji2:1.0.0] C:\Users\User\.gradle\caches\transforms-3\9aaa1b590eb2f3bcac6c49d3fc8b84cf\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+272                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+272-->[androidx.emoji2:emoji2:1.0.0] C:\Users\User\.gradle\caches\transforms-3\9aaa1b590eb2f3bcac6c49d3fc8b84cf\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+273                android:value="androidx.startup" />
+273-->[androidx.emoji2:emoji2:1.0.0] C:\Users\User\.gradle\caches\transforms-3\9aaa1b590eb2f3bcac6c49d3fc8b84cf\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+274            <meta-data
+274-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\User\.gradle\caches\transforms-3\a4ee5ae2a9f6a2d028dd8e6b11840bc8\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+275                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+275-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\User\.gradle\caches\transforms-3\a4ee5ae2a9f6a2d028dd8e6b11840bc8\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+276                android:value="androidx.startup" />
+276-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\User\.gradle\caches\transforms-3\a4ee5ae2a9f6a2d028dd8e6b11840bc8\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+277        </provider>
+278    </application>
+279
+280</manifest>

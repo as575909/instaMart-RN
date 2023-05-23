@@ -50,7 +50,7 @@ const ForgotPasswordScreen = ({ route, navigation }) => {
         onChangeText={setPhoneNumber}
       />
       <MyButton onPress={handleSendOTP} text={t("forgot_sendOtp_btn")} />
-      <MyButton onPress={() => {navigation.navigate('OtpScreen')}} text={'OtppppScreen'} />
+      
     </View>
   );
 };
