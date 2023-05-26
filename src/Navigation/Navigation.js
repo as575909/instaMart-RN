@@ -9,6 +9,7 @@ import DrawerNav from './DrawerNav';
 import OTPScreen from '../screens/OnBoardingScreen/OtpScreen';
 import Settings from '../screens/Settings';
 
+
 const Navigation = () => {
   const Stack = createNativeStackNavigator();
 
@@ -19,6 +20,7 @@ const Navigation = () => {
       
         <Stack.Screen name='AuthStack' component={AuthStack} options={{ headerShown: false }} />
         <Stack.Screen name='OtpScreen' component={OTPScreen} options={{ headerShown: false }} /> 
+        <Stack.Screen name='DrawerNav' component={DrawerNav} options={{ headerShown: false }} />
         <Stack.Screen name='TabNavigator' component={TabNavigator} options={{ headerShown: false }} />
         <Stack.Screen name='AppStack' component={AppStack} options={{ headerShown: false }} />
         <Stack.Screen name='ProductDetails' component={ProductDetails}

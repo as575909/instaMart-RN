@@ -7,6 +7,7 @@ import { SubmitButton } from '../../component/SubmitButton';
 import { Checkbox } from '../../component/CheckBox';
 import MyText from '../../component/MyText';
 import { useTranslation } from "react-i18next";
+import Back from '../../component/Back';
 
 // Header component
 const Header = () => {
@@ -38,7 +39,9 @@ const Contact = ({ navigation }) => {
 
   return (
     <ScrollView>
+      <Back />
       <View style={styles.mainContainer}>
+        
         <Header />
         <Input label={t("Name")} placeholder={t("contact_name_placeholder")} value={name} onChangeText={(userdata) => setName(userdata)} />
         <Input label={t("Email")} placeholder={t("contact_email_placeholder")} value={email} onChangeText={(email) => setEmail(email)} />

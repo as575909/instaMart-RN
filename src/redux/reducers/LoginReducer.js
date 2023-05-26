@@ -33,8 +33,29 @@ const loginSlice = createSlice({
          }
        },
 
+       updateUserDetails(state, action) {
+         const { FirstName, LastName, Email, PhoneNum, Address } = action.payload;
+         const user = state.data[0];
+
+         const updatedUser = {
+            ...user,
+            firstName: FirstName,
+                lastName: LastName,
+                email: Email,
+                contactNumber: PhoneNum,
+                city: Address,
+         };
+         console.log(updatedUser, 'myLog');
+         console.log(state);
+         let data = [...state.data];
+         let userDetail = { ...data[0] };
+         let finalData = { ...userDetail, ...updatedUser };
+         data[0] = { ...finalData };
+         return { ...state, data };
+      },
+
    }
 })
 
-export const { adduser, updatePassword } = loginSlice.actions;
+export const { adduser, updatePassword, updateUserDetails } = loginSlice.actions;
 export default loginSlice.reducer;

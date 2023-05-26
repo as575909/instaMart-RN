@@ -50,7 +50,7 @@ const SignInScreen = (props) => {
                         `${userData.data[0].Name} you are successfully logged in!`
                     );
                 }
-                navigation.navigate('TabNavigator')
+                navigation.navigate('DrawerNav')
             }
             else {
 

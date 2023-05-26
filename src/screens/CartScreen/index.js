@@ -10,6 +10,7 @@ import HomeHeadNav from '../../component/HomeHeadNav';
 import { CURRENCY_SYMBOLS } from '../../utils/currencySymbols';
 import { listEmptyComponent } from "../../component/EmptyList";
 import { useTranslation } from "react-i18next";
+import { sendCheckoutNotification } from '../../utils/Notification';
 
 
 const CartScreen = ({ navigation }) => {
@@ -147,7 +148,7 @@ const CartScreen = ({ navigation }) => {
                 </Text>
               </View>
               <View style={styles.total1}>
-                <TouchableOpacity style={btn1}>
+                <TouchableOpacity style={btn1} onPress={sendCheckoutNotification}>
                   <Text style={{ color: 'white', marginTop: 10, fontSize: 20 }}>{t("cart_checkout_btn")}</Text>
                 </TouchableOpacity>
               </View>

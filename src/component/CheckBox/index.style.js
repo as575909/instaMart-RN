@@ -7,6 +7,7 @@ export const styles = StyleSheet.create({
         flexDirection: "row",
         marginTop: 20,
         fontFamily: "Itim-Regular",
+        color: 'grey',
       },
       wrapperText: {
         marginLeft: 10,

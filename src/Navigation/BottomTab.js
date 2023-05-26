@@ -44,7 +44,7 @@ const TabNavigator = () => {
        
       })}>
 
-      <Tab.Screen name="Products" component={DrawerNav}></Tab.Screen>
+      <Tab.Screen name="Products" component={Products}></Tab.Screen>
 
       {/* <Tab.Screen name="Home" component={Home}
         options={{

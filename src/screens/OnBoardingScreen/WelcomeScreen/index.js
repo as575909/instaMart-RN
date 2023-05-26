@@ -6,6 +6,7 @@ import { useNavigation } from '@react-navigation/native';
 import {getData} from '../../../utils/asyncStorage';
 import styles from '../../../statics/styles';
 import TabNavigator from '../../../Navigation/BottomTab';
+import DrawerNav from '../../../Navigation/DrawerNav';
 import { useTranslation } from "react-i18next";
 
 const WelcomeScreen = ({ }) => {
@@ -14,7 +15,7 @@ const WelcomeScreen = ({ }) => {
     const retrieveData = async () => {
         try {
             const value = await getData('isLoggedIn' , (err, result) => {
-                navigation.navigate(result != '1' ? 'signup' : TabNavigator)
+                navigation.navigate(result != '1' ? 'signup' : DrawerNav)
                 console.log(result);
               });
           

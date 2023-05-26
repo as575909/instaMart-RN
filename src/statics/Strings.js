@@ -67,6 +67,8 @@ const Strings = {
   contact_mob_placeholder: '10-Digit',
   contact_help_placeholder: 'Tell us about yourself',
   //--------------------------------------------------------//
+  FCM_SERVER_KEY:
+  'AAAAwED4vnk:APA91bFG3kpulfWbKu9a900AuBVE7HJ0HMNRWZraSP9vb2b6WLAqjAQSjZ5pTNNJJbsqE4l6lYH97T7roFZnEwgU20dMQhjyjxlP-BQbe5f9zictUYDx_wgez1nJe_w2z96XAJFV0BUc',
 
 
 

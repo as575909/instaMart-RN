@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {View, Text } from 'react-native';
 import Geolocation from '@react-native-community/geolocation';
 import { styles } from './index.style';
+import Back from '../Back';
 
 const LocationComponent = () => {
   const [latitude, setLatitude] = useState(null);
@@ -22,7 +23,9 @@ const LocationComponent = () => {
   console.log(latitude, longitude);
 
   return (
+   
     <View style={styles.container}>
+       <Back />
       <Text style={styles.title}>Current Location:</Text>
       {latitude && longitude ? (
         <Text style={styles.location}>

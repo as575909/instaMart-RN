@@ -4,8 +4,6 @@ import Profile from '../screens/Profile';
 import Products from '../screens/Products';
 import CartScreen from '../screens/CartScreen';
 import LocationComponent from '../component/Location';
-import UserData from '../screens/UserData';
-import About from '../screens/About';
 import Contact from '../screens/Contact';
 import CustomDrawer from '../component/CustomDrawer';
 import Ionicons from 'react-native-vector-icons/Ionicons';
@@ -39,7 +37,7 @@ function DrawerNav() {
         }
       }}
     >
-      <Drawer.Screen name={t("welcome_title")} component={Products}
+      <Drawer.Screen name={t("welcome_title")} component={TabNavigator}
         options={{
           drawerIcon: ({ color }) => (
             <Ionicons name='list-outline' size={22} color={color} />

@@ -10,6 +10,7 @@ import MyText from '../../../component/MyText';
 import MyTextInput from '../../../component/MyTextInput';
 import MyButton from '../../../component/MyButton';
 import { useTranslation } from "react-i18next";
+import Back from '../../../component/Back';
 
 const ForgotPasswordScreen = ({ route, navigation }) => {
   const {t} = useTranslation();
@@ -39,6 +40,8 @@ const ForgotPasswordScreen = ({ route, navigation }) => {
   };
   return (
     <View style={styles.container}>
+      <Back />
+    <View style={styles.container1}>
       <MyText style={styles.title}>{t("forgot_title1")}</MyText>
       <MyText style={styles.subtitle}>{t("forgot_title2")}</MyText>
       <MyTextInput
@@ -51,6 +54,7 @@ const ForgotPasswordScreen = ({ route, navigation }) => {
       />
       <MyButton onPress={handleSendOTP} text={t("forgot_sendOtp_btn")} />
       
+    </View>
     </View>
   );
 };

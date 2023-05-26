@@ -4,10 +4,15 @@ import colors from '../../../statics/styles/colors';
 export const styles = StyleSheet.create({
     container: {
       flex: 1,
+      
+    },
+    container1: {
+      marginTop: 200,
       alignItems: 'center',
       justifyContent: 'space-evenly',
       paddingHorizontal: 30,
-    },
+    }, 
+
     title: {
       color: colors.text3,
       fontSize: 28,

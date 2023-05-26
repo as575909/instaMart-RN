@@ -1,4 +1,4 @@
-import { View } from 'react-native'
+import { View, Alert } from 'react-native'
 import React, { useState, } from 'react'
 import CustomButton from '../../component/CustomButton'
 import Ionicons from 'react-native-vector-icons/Ionicons';
@@ -7,6 +7,9 @@ import { useTranslation } from 'react-i18next';
 import i18n from '../../i18n';
 import { styles } from './index.style';
 import TogglePermission from '../../component/TogglePermission';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { DrawerActions } from "@react-navigation/native";
+import Back from '../../component/Back';
 
 const Settings = ({ navigation }) => {
   const { t, i18n } = useTranslation();
@@ -20,7 +23,7 @@ const Settings = ({ navigation }) => {
 
   return (
     <View style={styles.container}>
-
+      <Back />
       <TogglePermission />
 
       <View style={styles.lngicon1}>
@@ -31,6 +34,27 @@ const Settings = ({ navigation }) => {
       <View style={styles.lngicon1}>
         <Ionicons style={styles.icon} name='person-outline' size={28} color='yellow' />
         <CustomButton style={styles.cstmBtn} text={'Edit Profile'} stylee={styles.cstmBtnTxt} onPress={() => navigation.navigate('Edit Profile')} />
+      </View>
+
+      <View style={styles.lngicon1}>
+        <Ionicons style={styles.icon} name='exit-outline' size={28} color='yellow' />
+        <CustomButton style={styles.cstmBtn} text="Logout" stylee={styles.cstmBtnTxt}
+          onPress={() => Alert.alert(
+            'LogOut',
+            t("LogoutTxt"),
+            [
+              { text: t("Cancel"), onPress: () => { props.navigation.dispatch(DrawerActions.closeDrawer()) } },
+              {
+                text: t("confirm_txt"), onPress: () => {
+                  {
+                    AsyncStorage.clear();
+                    navigation.navigate('login')
+                  }
+                }
+              }
+            ],
+          )
+          } />
       </View>
 
       <View style={styles.lngicon}>

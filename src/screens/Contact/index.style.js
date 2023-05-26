@@ -14,7 +14,7 @@ export const styles = StyleSheet.create({
       flex: 1,
       height: "100%",
       paddingHorizontal: 30,
-      backgroundColor: "#fff",
+      backgroundColor: colors.background,
     },
     mainHeader: {
       fontSize: 24,
