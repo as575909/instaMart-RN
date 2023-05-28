@@ -15,70 +15,70 @@ import MyText from '../MyText';
 import { useTranslation } from "react-i18next";
 
 const CustomDrawer = (props) => {
-    const {t} = useTranslation();
+    const { t } = useTranslation();
     const referralCode = "A12B64D";
     const message = `Use my referral code ${referralCode} to get a discount!`;
     const shareReferralCode = () => {
         Linking.openURL(`whatsapp://send?text=${message}`);
-      };
-
+    };
+    const profileImage = useSelector(state => state.profile.profileImage);
     const userName = useSelector((state) => state.user);
     //console.log(userName.data[0].Name,"jkl");
-  return (
-    <View style={styles.containerCustomDrawer}>
-    <DrawerContentScrollView 
-    {...props}
-    contentContainerStyle={{backgroundColor:'#89CFF0'}}>
+    return (
+        <View style={styles.containerCustomDrawer}>
+            <DrawerContentScrollView
+                {...props}
+                contentContainerStyle={{ backgroundColor: '#89CFF0' }}>
 
-        <ImageBackground source={bgdrawer} style={styles.imgbg}>
-         <TouchableOpacity onPress={()=> props.navigation.navigate('About') }>   
-         <UserAvatar userImg= {webImgs.avatarMale} />
-        <MyText style={styles.user}>{t("home_welcome")}, {userName.data[0].Name}</MyText>
-        <MyText style={styles.user}>{t("customdrawer_title")}</MyText>
-        </TouchableOpacity>
-        </ImageBackground>
+                <ImageBackground source={bgdrawer} style={styles.imgbg}>
+                    <TouchableOpacity onPress={() => props.navigation.navigate('About')}>
+                        <UserAvatar userImg={profileImage} />
+                        <MyText style={styles.user}>{t("home_welcome")}, {userName.data[0].Name}</MyText>
+                        <MyText style={styles.user}>{t("customdrawer_title")}</MyText>
+                    </TouchableOpacity>
+                </ImageBackground>
 
-        <View style={styles.list}>
-        <DrawerItemList {...props} />
-        </View>
+                <View style={styles.list}>
+                    <DrawerItemList {...props} />
+                </View>
 
-    </DrawerContentScrollView>
-    <View style={styles.footer}>
-        <TouchableOpacity onPress={shareReferralCode} style={styles.share}>
-            <View style={styles.shareIcon}>
-        <Ionicons name='share-social-outline' size={22} />
-        <Text style={styles.refer}> {t("customdrawer_referfriend_txt")} </Text>
-        </View>
-        </TouchableOpacity>
+            </DrawerContentScrollView>
+            <View style={styles.footer}>
+                <TouchableOpacity onPress={shareReferralCode} style={styles.share}>
+                    <View style={styles.shareIcon}>
+                        <Ionicons name='share-social-outline' size={22} />
+                        <Text style={styles.refer}> {t("customdrawer_referfriend_txt")} </Text>
+                    </View>
+                </TouchableOpacity>
 
-        <TouchableOpacity
-        onPress={() => Alert.alert(
-            'LogOut',
-            t("LogoutTxt"),
-            [
-                { text: t("Cancel"), onPress: () => { props.navigation.dispatch(DrawerActions.closeDrawer()) } },
-                {
-                    text: t("confirm_txt"), onPress: () => {
-                        {
-                            AsyncStorage.clear();
-                            props.navigation.navigate('login')
-                        }
+                <TouchableOpacity
+                    onPress={() => Alert.alert(
+                        'LogOut',
+                        t("LogoutTxt"),
+                        [
+                            { text: t("Cancel"), onPress: () => { props.navigation.dispatch(DrawerActions.closeDrawer()) } },
+                            {
+                                text: t("confirm_txt"), onPress: () => {
+                                    {
+                                        AsyncStorage.clear();
+                                        props.navigation.navigate('login')
+                                    }
+                                }
+                            }
+                        ],
+                    )
                     }
-                }
-            ],
-        )
-        } 
-        //onPress={()=>{}}
-        style={styles.share}>
-            <View style={styles.shareIcon}>
-        <Ionicons name='exit-outline' size={22} />
-        <Text style={styles.refer}> {t("logout_btn")} </Text>
-        </View>
-        </TouchableOpacity>
+                    //onPress={()=>{}}
+                    style={styles.share}>
+                    <View style={styles.shareIcon}>
+                        <Ionicons name='exit-outline' size={22} />
+                        <Text style={styles.refer}> {t("logout_btn")} </Text>
+                    </View>
+                </TouchableOpacity>
 
-    </View>
-    </View>
-  )
+            </View>
+        </View>
+    )
 }
 
 export default CustomDrawer

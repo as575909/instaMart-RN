@@ -29,21 +29,21 @@ const loginSlice = createSlice({
          const { phoneNumber, password } = action.payload;
          const userIndex = state.data.findIndex((user) => user.Number === phoneNumber);
          if (userIndex !== -1) {
-           state.data[userIndex].Password = password;
+            state.data[userIndex].Password = password;
          }
-       },
+      },
 
-       updateUserDetails(state, action) {
-         const { FirstName, LastName, Email, PhoneNum, Address } = action.payload;
+      updateUserDetails(state, action) {
+         const { firstName, lastName, email, phoneNum, address } = action.payload;
          const user = state.data[0];
 
          const updatedUser = {
             ...user,
-            firstName: FirstName,
-                lastName: LastName,
-                email: Email,
-                contactNumber: PhoneNum,
-                city: Address,
+            firstName,
+            lastName,
+            email,
+            contactNumber: phoneNum,
+            city: address,
          };
          console.log(updatedUser, 'myLog');
          console.log(state);

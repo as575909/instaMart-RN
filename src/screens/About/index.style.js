@@ -21,7 +21,7 @@ export const styles = StyleSheet.create({
       fontWeight: "500",
       // marginTop: 50,
       marginTop: moderateScale(10),
-      marginBottom: moderateScale(10),
+     // marginBottom: moderateScale(10),
       fontFamily: "Itim-Regular",
     },
     paraStyle: {
@@ -34,7 +34,7 @@ export const styles = StyleSheet.create({
       backgroundColor: "#4c5dab",
       paddingHorizontal: moderateScale(30),
       // marginVertical: 30,
-      marginTop: moderateScale(12),
+      //marginTop: moderateScale(12),
       borderRadius: moderateScale(60),
     },
     aboutSubHeader: {
@@ -58,7 +58,7 @@ export const styles = StyleSheet.create({
       justifyContent: "space-evenly",
     },
     bottomContainer:{
-     marginTop: moderateScale(40),
+    // marginTop: moderateScale(40),
     },
     btnCtn:{
       flexDirection: 'row',

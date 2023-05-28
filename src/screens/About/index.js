@@ -16,33 +16,13 @@ import ImagePicker from 'react-native-image-crop-picker';
 import { useTranslation } from "react-i18next";
 
 const About = () => {
+  const profileImage = useSelector(state => state.profile.profileImage);
   const [image, setImage] = useState(webImgs.avatarMale);
   const [search, setSearch] = useState('');
   const userName = useSelector((state) => state.user);
   const phoneNumber = 'tel:${1234567890}';
   const emailAddress = 'mailto:as575909@gmail.com';
 const {t} = useTranslation();
-const takePhotoFromCamera = () => {
-  ImagePicker.openCamera({
-    compressImageMaxWidth: 300,
-    compressImageMaxHeight: 400,
-    cropping: true,
-  }).then(image => {
-    console.log(image);
-    setImage(image.path);
-  });
-}
-
-const choosePhotoFromLibrary = () => {
-  ImagePicker.openPicker({
-    width: 300,
-    height: 400,
-    cropping: true
-  }).then(image => {
-    console.log(image);
-    setImage(image.path);
-  });
-}
 
   return (
     <SafeAreaView>
@@ -53,10 +33,10 @@ const choosePhotoFromLibrary = () => {
       <MyText style={styles.mainHeader}>{userName.data[0].Name}</MyText>
       <MyText style={styles.paraStyle}>{t("about_user_title")}</MyText>
 
-      <UserAvatar userImg= {image} />
+      <UserAvatar userImg={profileImage} />
       <View style={styles.btnCtn}>
-      <MyButton onPress={takePhotoFromCamera} text={t("about_tkphoto_btn")} />
-      <MyButton style={{marginLeft: 10}} onPress={choosePhotoFromLibrary} text={t("about_chgllry_btn")} />
+      {/* <MyButton onPress={takePhotoFromCamera} text={t("about_tkphoto_btn")} />
+      <MyButton style={{marginLeft: 10}} onPress={choosePhotoFromLibrary} text={t("about_chgllry_btn")} /> */}
       </View>
 
       <View style={styles.aboutLayout}>
