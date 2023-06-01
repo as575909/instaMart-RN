@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.instamart.app-mergeDebugResources-36:/values-et/values-et.xml",
+            "outputFile": "com.instamart.app-mergeDebugResources-39:/values-et/values-et.xml",
             "map": [
                 {
                     "source": "C:\\Users\\User\\.gradle\\caches\\transforms-3\\b8b032a9f011549aa4242ce10998c5f2\\transformed\\jetified-play-services-basement-18.1.0\\res\\values-et\\values.xml",
@@ -38,6 +38,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\User\\.gradle\\caches\\transforms-3\\269c9f868e782062e0af1d1dc0411f28\\transformed\\jetified-play-services-base-18.1.0\\res\\values-et\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "193,292,450,573,677,823,948,1060,1159,1315,1419,1579,1707,1858,1999,2058,2119",
+                        "endColumns": "98,157,122,103,145,124,111,98,155,103,159,127,150,140,58,60,83",
+                        "endOffsets": "291,449,572,676,822,947,1059,1158,1314,1418,1578,1706,1857,1998,2057,2118,2202"
+                    },
+                    "to": {
+                        "startLines": "29,30,31,32,33,34,35,36,38,39,40,41,42,43,44,45,46",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "2827,2930,3092,3219,3327,3477,3606,3722,3965,4125,4233,4397,4529,4684,4829,4892,4957",
+                        "endColumns": "102,161,126,107,149,128,115,102,159,107,163,131,154,144,62,64,87",
+                        "endOffsets": "2925,3087,3214,3322,3472,3601,3717,3820,4120,4228,4392,4524,4679,4824,4887,4952,5040"
+                    }
+                },
+                {
                     "source": "C:\\Users\\User\\.gradle\\caches\\transforms-3\\58f201ae8d58e6730b260f80337be765\\transformed\\browser-1.4.0\\res\\values-et\\values-et.xml",
                     "from": {
                         "startLines": "2,3,4,5",
@@ -52,23 +69,6 @@
                         "startOffsets": "5045,5145,5245,5352",
                         "endColumns": "99,99,106,98",
                         "endOffsets": "5140,5240,5347,5446"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\User\\.gradle\\caches\\transforms-3\\14534f11995b76409b349d353840fdfc\\transformed\\jetified-play-services-base-18.0.1\\res\\values-et\\values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
-                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-                        "startOffsets": "193,292,450,573,677,823,948,1060,1159,1315,1419,1579,1707,1858,1999,2058,2119",
-                        "endColumns": "98,157,122,103,145,124,111,98,155,103,159,127,150,140,58,60,83",
-                        "endOffsets": "291,449,572,676,822,947,1059,1158,1314,1418,1578,1706,1857,1998,2057,2118,2202"
-                    },
-                    "to": {
-                        "startLines": "29,30,31,32,33,34,35,36,38,39,40,41,42,43,44,45,46",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "2827,2930,3092,3219,3327,3477,3606,3722,3965,4125,4233,4397,4529,4684,4829,4892,4957",
-                        "endColumns": "102,161,126,107,149,128,115,102,159,107,163,131,154,144,62,64,87",
-                        "endOffsets": "2925,3087,3214,3322,3472,3601,3717,3820,4120,4228,4392,4524,4679,4824,4887,4952,5040"
                     }
                 },
                 {

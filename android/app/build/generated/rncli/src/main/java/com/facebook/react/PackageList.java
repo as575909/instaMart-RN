@@ -29,6 +29,8 @@ import io.invertase.firebase.messaging.ReactNativeFirebaseMessagingPackage;
 import com.swmansion.gesturehandler.RNGestureHandlerPackage;
 // react-native-image-crop-picker
 import com.reactnative.ivpusic.imagepicker.PickerPackage;
+// react-native-maps
+import com.rnmaps.maps.MapsPackage;
 // react-native-permissions
 import com.zoontek.rnpermissions.RNPermissionsPackage;
 // react-native-push-notification
@@ -97,6 +99,7 @@ public class PackageList {
       new ReactNativeFirebaseMessagingPackage(),
       new RNGestureHandlerPackage(),
       new PickerPackage(),
+      new MapsPackage(),
       new RNPermissionsPackage(),
       new ReactNativePushNotificationPackage(),
       new ReanimatedPackage(),

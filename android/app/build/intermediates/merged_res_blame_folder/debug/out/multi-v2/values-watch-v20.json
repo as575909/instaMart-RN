@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.instamart.app-mergeDebugResources-36:/values-watch-v20/values-watch-v20.xml",
+            "outputFile": "com.instamart.app-mergeDebugResources-39:/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
                     "source": "C:\\Users\\User\\.gradle\\caches\\transforms-3\\2c72d4c775f629c439aaa1d0c0739c8c\\transformed\\jetified-play-services-auth-20.3.0\\res\\values-watch-v20\\values.xml",

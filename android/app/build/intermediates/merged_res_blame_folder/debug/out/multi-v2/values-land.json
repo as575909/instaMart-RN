@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.instamart.app-mergeDebugResources-36:/values-land/values-land.xml",
+            "outputFile": "com.instamart.app-mergeDebugResources-39:/values-land/values-land.xml",
             "map": [
                 {
                     "source": "C:\\Users\\User\\.gradle\\caches\\transforms-3\\089e4fcf3172187d7ae460886ee691b3\\transformed\\material-1.1.0\\res\\values-land\\values-land.xml",
