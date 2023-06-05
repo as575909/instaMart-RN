@@ -51,7 +51,21 @@ const LocationComponent = () => {
           onFail={error => console.log(error)}
           onNotFound={() => console.log('No results')}
           predefinedPlaces={[
-            // Predefined places
+            {
+              type: 'favorite',
+              description: 'Delhi, India',
+              geometry: { location: { lat: 28.679079, lng: 77.069710 } },
+            },
+            {
+              type: 'favorite',
+              description: 'Mumbai, Maharashtra, India',
+              geometry: { location: { lat: 19.076090, lng: 72.877426 } },
+            },
+            {
+              type: 'favorite',
+              description: 'Sagar, Karnataka, India',
+              geometry: { location: { lat: 14.167040, lng: 75.040298 } },
+            },
           ]}
           renderRow={(rowData, index, isPredefinedPlace) => (
             <View style={styles.rowContainer}>
